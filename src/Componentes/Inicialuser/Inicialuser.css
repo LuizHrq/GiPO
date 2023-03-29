@@ -1,0 +1,12 @@
+.fases{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.fases p{
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}

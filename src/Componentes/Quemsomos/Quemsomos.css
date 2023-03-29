@@ -1,0 +1,115 @@
+.proposito{
+    display: flex;
+    width: 60%;
+    height: 100px;
+    background-color: #FFF5D0;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
+.proposito p{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    color: #10222e;
+    font-weight: 700;
+}
+
+.proposito2{
+    display: flex;
+    width: 40%;
+    height: 60px;
+    background-color: #FFF5D0;
+    margin: 90px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.proposito2 p{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    color: #10222e;
+    font-weight: 700;
+}
+
+.linhaesquerda{
+    display: flex;
+    width: 48%;
+    height: 1vh;
+    background-color: #DEA156;
+    margin-left: auto;
+    border-radius: 30px 0 0 30px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+
+}
+
+.linhadireita{
+    display: flex;
+    width: 48%;
+    height: 1vh;
+    background-color: #DEA156;
+    margin-right: auto;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.qs1{
+    display: flex;
+    width: 48%;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: auto;
+}
+.qs1 h2{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 20px;
+    margin: auto;
+    color: #10222e;
+    text-align: left;
+}
+
+.qs2{
+    display: flex;
+    width: 48%;
+    height: 150px;
+    margin-right: auto;
+}
+.qs2 h2{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 20px;
+    margin: auto;
+    color: #10222e;
+    text-align: right;
+}
+
+.qs3{
+    display: flex;
+    width: 48%;
+    height: 150px;
+    margin-top: 0;
+    margin-left: auto;
+}
+.qs3 h2{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 20px;
+    margin: auto;
+    color: #10222e;
+    text-align: left;
+}
