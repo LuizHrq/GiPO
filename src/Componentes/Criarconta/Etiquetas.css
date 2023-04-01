@@ -1,15 +1,5 @@
-body{
-    width: auto;
-    height: auto;
-    margin:0;
-    padding:0;
-    justify-content: center;
-    align-items: center;
-}
-
-
 h2{
-    color:#013750;
+    color:#10222e;
     font-weight: bold;
     font-size: 25px;
 }
@@ -31,25 +21,55 @@ h2{
 }
 
 .formulario label{
-    font-size: 15px;
+    font-size: 20px;
+    color:#10222e;
+    font-weight: 500;
+
 }
 
 .formulario input{
-    background-color: #a8a8a86e;;
-    border-radius: 30px;
-    height: 30px;
+    display: flex;
+    width: 100%;
+    background-color: #EBE7D9;
+    border-radius: 10px;
+    height: 50px;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
 }
 
 .formulario button{
     background-color: #6af039;
     border: none;
     font-size: 18px;
-    color: #013750;
+    color: #10222e;
     width: 135px;
     height: 50px;
     border-radius: 10px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
     font-weight: 600;
 }
+
+legend{
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    color:#10222e;
+    font-weight: 500;
+}
+fieldset{
+    display: block;
+    border-style: none;
+    border-color: none;
+    border-image: initial;
+}
+span{
+    display: inline-block;
+    color: red;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
