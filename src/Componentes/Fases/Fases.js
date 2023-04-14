@@ -6,9 +6,10 @@ export default function Fases(){
     return(
         <>
             <div className="blocos">
-                <div className="fase1">
+                <a href={"/fase1"}><div className="fase1" to="/criarconta">
                     <h2>Fase 1:<br></br>O que é o IPO?</h2>
                 </div>
+                </a>
 
                 <div className="fase2">
                     <h2>Fase 2:<br></br>Etapas do IPO <br></br>Parte 1</h2>

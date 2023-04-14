@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useHistory } from "react-router-dom";
+
 import './Login.css';
 import HeaderLogin from '../HeaderLogin/HeaderLogin';
 import Footer from '../Footer/Footer';
@@ -7,22 +6,20 @@ import Footer from '../Footer/Footer';
 
 export default function Login (){
 
-    const [email, setEmail] = useState("");
-    const [login, setLogin] = useState("");
-    const history = useHistory();
+    // const [email, setEmail] = useState("");
+    // const [login, setLogin] = useState("");
+    // const Link = Link();
   
-    function handleLogin() {
-      const usuario = listaUsuario.find((u) => u.email === email && u.login === login);
-      if (usuario) {
-        // Redireciona para página InicialUser
-        history.push("/inicialuser");
-      } else {
-        // Exibe mensagem de alerta e limpa campos
-        alert("Dados inválidos");
-        setEmail("");
-        setLogin("");
-      }
-    }
+    // function handleLogin() {
+    //   const usuario = listaUsuario.find((u) => u.email === email && u.login === login);
+    //   if (usuario) {
+    //     Link("/inicialuser");
+    //   } else {
+    //     alert("Dados inválidos");
+    //     setEmail("");
+    //     setLogin("");
+    //   }
+    // }
 
 
     return(
@@ -31,12 +28,15 @@ export default function Login (){
             <div className="formulario">
                 <form>
                     <h2>LOGIN</h2>
-                    <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
-                    <input type="password" value={senha} onChange={(event) => setSenha(event.target.value)} />
+                    <label>E-mail
+                      <input type="email" label="E-mail"/>
+                    </label>
+                    <label>Senha <br></br>
+                      <input type="password"/>
+                    </label>
     
 
-                    <input type="checkbox" id="confirm"/>Lembrar meu acesso
-                    <button type="submit" onClick={handleLogin}>ENTRAR</button>
+                    <input type="checkbox" id="confirm"/><label for="confirm">Lembrar meu acesso</label>
 
                 </form>
             </div>

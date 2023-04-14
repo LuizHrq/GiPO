@@ -18,13 +18,16 @@
     background-color: #FFF5D0;
     margin-top: 30px;
     border-radius: 0 30px 30px 0;
+    text-decoration: none;
 }
 .fase1 h2{
+    text-decoration: none;
     width: auto;
     height: auto;
     font-size: 20px;
     margin: auto;
     color: #BF712C;
+    text-decoration: none;
 }
 
 .fase2{
