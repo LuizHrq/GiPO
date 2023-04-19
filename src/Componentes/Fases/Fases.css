@@ -8,6 +8,7 @@
     padding: 30px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -111,3 +112,71 @@
     margin-top: 30px;
     color: #BF712C;
 } 
+
+@media (min-width:315px) {
+    .blocos{
+        width: 90%;
+        background-color: #10222e;
+        border-radius: 30px;
+    }
+    .fase1{
+        display: flex;
+        width: 80%;
+        height: 130px;
+        margin-bottom: 30px;
+    }
+    .fase1 h2{
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        text-align: left;
+    }
+    .fase2{
+        display: flex;
+        width: 80%;
+        height: 130px;
+        margin-bottom: 30px;
+    }
+    .fase2 h2{
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        text-align: right;
+    }
+    .fase3{
+        display: flex;
+        width: 80%;
+        height: 130px;
+        margin-bottom: 30px;
+    }
+    .fase3 h2{
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        text-align: left;
+    }
+    .fase4{
+        display: flex;
+        width: 80%;
+        height: 130px;
+        margin-bottom: 30px;
+    }
+    .fase4 h2{
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        text-align: right;
+    }
+    .fase5{
+        display: flex;
+        width: 80%;
+        height: 130px;
+        margin-bottom: 30px;
+    }
+    .fase5 h2{
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        text-align: left;
+    }
+}

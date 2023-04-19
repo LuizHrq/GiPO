@@ -15,12 +15,10 @@ export default function Inicialuser(){
                 </div>
                 <img id="gipopersona" src="./img/3d_Gipo_man.png" alt="imagem persona"></img>
             </div>
-
-            
-            <div classname="fases">
-    
-                <p>Aqui você poderá iniciar sua jornada de conhecimento sobre IPO!</p>
+            <div className="fases">
+                <h2>Aqui você poderá iniciar sua jornada de conhecimento sobre IPO!</h2>
             </div>
+            
             <Fases/>  
             <Footer/>
         </>
