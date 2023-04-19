@@ -5,8 +5,8 @@ export default function Conteudo1(){
     return(
         <>
             <div className="texto1">
-                <h1 className="titulo1">O QUE É UM IPO?</h1>
-                <p className="paragrafo1">A sigla IPO significa “Initial Public Offering”, em português: “Oferta
+                <h1>O QUE É UM IPO?</h1>
+                <p>A sigla IPO significa “Initial Public Offering”, em português: “Oferta
                     Pública Inicial. Em suma, é o momento em que pela primeira vez uma
                     empresa passará a receber novos sócios através da oferta de ações na bolsa
                     de valores, tornando-se uma companhia de capital aberto. Os motivos que
@@ -17,8 +17,8 @@ export default function Conteudo1(){
             </div>
 
             <div className="texto2">
-                <h1 className="titulo1">JORNADA DA COMPANHIA DURANTE O IPO</h1>
-                <p className="paragrafo2">A realidade é
+                <h1>JORNADA DA COMPANHIA DURANTE O IPO</h1>
+                <p>A realidade é
                     que o processo de IPO é bem complexo, rígido, regulamentado e demorado
                     que envolve vários agentes. Empresas gastam milhões para abrir seu
                     capital, podendo levar mais de 1 ano para conclusão de todas as etapas.

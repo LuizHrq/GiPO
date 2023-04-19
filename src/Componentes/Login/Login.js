@@ -25,19 +25,24 @@ export default function Login (){
     return(
         <>
         <HeaderLogin/>
-            <div className="formulario">
+            <div className="formulariologin">
                 <form>
-                    <h2>LOGIN</h2>
+                    <div className='titulologin'>
+                        <h2>LOGIN</h2>
+                    </div>
+                    
                     <label>E-mail
-                      <input type="email" label="E-mail"/>
+                    <input type="email"/>
                     </label>
-                    <label>Senha <br></br>
-                      <input type="password"/>
+                    <label>Senha
+                    <input type="password"/>
                     </label>
-    
-
+                    <br></br>
                     <input type="checkbox" id="confirm"/><label for="confirm">Lembrar meu acesso</label>
 
+                    <div className='botaologar'>
+                        <button type="submit">ENTRAR</button>
+                    </div>
                 </form>
             </div>
         <Footer/>

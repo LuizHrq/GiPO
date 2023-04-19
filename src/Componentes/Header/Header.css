@@ -48,7 +48,14 @@ header {
   color: #10222e;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 640px) {
+  #logo {
+    width: 180px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 5px;
+  } 
   .menu {
     display: none;
   }
@@ -91,4 +98,41 @@ header {
     text-decoration: none;
   }
 
+}
+
+@media (min-width: 400px) {
+  #logo {
+    width: 200px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 5px;
+  } 
+
+}
+
+@media (min-width: 600px) {
+  #logo {
+    width: 200px;
+    height: 70px;
+    margin-left: 15px;
+    margin-top: 5px;
+  } 
+}
+
+@media (min-width: 768px) {
+  #logo {
+    width: 220px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 5px;
+  } 
+}
+
+@media (min-width: 768px) {
+  #logo {
+    width: 250px;
+    height: 90px;
+    margin-left: 30px;
+    margin-top: 5px;
+  } 
 }

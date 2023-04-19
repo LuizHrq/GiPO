@@ -5,7 +5,9 @@ import './Time.css'
 export default function Time(){
     return(
     <>
-    <h2>Equipe de Desenvolvimento</h2>  
+        <div className="titulotime">
+            <h2>Equipe de Desenvolvimento</h2>
+        </div>
         <div className="time">
 
             <div className="dev">
@@ -25,7 +27,6 @@ export default function Time(){
                 <h4>Samuel Enderson</h4>
                 <h5>Desenvolvedor</h5>
             </div>
-
             <div className="dev">
                 <img id="dev" src="./img/devs/eduardo.png" alt="img murilo"></img>
                 <h4>Murilo Ariel</h4>

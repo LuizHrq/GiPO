@@ -1,6 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// import {Link} from 'react-router-dom';
 import './Inicial.css';
 
 
@@ -11,9 +9,8 @@ export default function Inicial(){
 
     return(
         <>
-        <div className='imageminicial'>
-            <img id="logoinicial" src="./img/logogipo2.png" alt="imagem logo"></img>
-        </div>
+        <img id="logoinicial" src="./img/logogipo2.png" alt="imagem logo"></img>
+        
             <h1 id="h1-inicio">Aprendendo IPO de maneira dinâmica.</h1>
 
         <div className='botaocomece'>
@@ -26,7 +23,7 @@ export default function Inicial(){
         <a href={"/login"}><button className="btn btn-conta">JÁ TENHO UMA CONTA</button></a>
         </div>
 
-        <a href={"/quemsomos"}><h3>quem somos?</h3></a>
+        <a href={"/quemsomos"}><h3>Quem somos?</h3></a>
         </>
     )
 }

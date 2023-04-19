@@ -1,4 +1,5 @@
 import React from "react";
+import './HeaderQS.css';
 
 export default function HeaderQS(){
     return(

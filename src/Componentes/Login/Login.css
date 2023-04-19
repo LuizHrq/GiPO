@@ -1,27 +1,60 @@
-h2{
+.titulologin{
+    display: block;
+    width: 100%;
+    color:#10222e;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 0;
     text-align: center;
 }
-
-.formulario{
-    margin-top: 40px;
-    margin-bottom: 40px;
+.formulariologin{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin-top: 125px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fafafa;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
 }
 
+.formulariologin input{
+    display: flex;
+    width: 80%;
+    height: 28px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid #10222e;
+    font-size: 15px;
+}
+.formulariologin label{
+    font-size:16px;
+    color:#10222e;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
 
-.formulario button{
-    background-color: #8AF963;
-    border: none;
-    font-size: 14px;
-    color: #013750;
+.botaologar button{
+    display: block;
     width: 40%;
+    height: 40px;
+    background-color: #8AF963;
+    color: #013750;
+    border: none;
     border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 600;
-    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
 #confirm{
     width: 20px;
     height: 20px;

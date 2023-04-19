@@ -7,8 +7,8 @@ import Login from './Componentes/Login/Login';
 import Header from './Componentes/Header/Header';
 import Fases from './Componentes/Fases/Fases';
 import Inicialuser from './Componentes/Inicialuser/Inicialuser';
-import Testes from './Componentes/Testes/Testes';
-import Conteudo from './Componentes/Conteudo1/Conteudo1';
+import Quiz1 from './Componentes/Fase1/Quiz1/Quiz1';
+import Conteudo from './Componentes/Fase1/Conteudo1/Conteudo1';
 import Fase1 from './Componentes/Fase1/Fase1';
 import Footer from './Componentes/Footer/Footer';
 import Quemsomos from './Componentes/Quemsomos/Quemsomos';
@@ -31,7 +31,7 @@ export default function App() {
           {/* COMPONENTES INDEPENDENTES */}
           <Route path='/header' element={<Header/>}/>
           <Route path='/fases' element={<Fases/>}/>
-          <Route path='/testes' element={<Testes/>}/>
+          <Route path='/quiz1' element={<Quiz1/>}/>
           <Route path='/conteudo' element={<Conteudo/>}/>
           <Route path='/footer' element={<Footer/>}/>
           <Route path='/conteudo' element={<Conteudo/>}/>

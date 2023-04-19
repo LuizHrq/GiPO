@@ -79,6 +79,7 @@
     margin: auto;
     color: #10222e;
     text-align: left;
+    font-weight: 500;
 }
 
 .qs2{
@@ -95,6 +96,7 @@
     margin: auto;
     color: #10222e;
     text-align: right;
+    font-weight: 500;
 }
 
 .qs3{
@@ -112,4 +114,51 @@
     margin: auto;
     color: #10222e;
     text-align: left;
+    font-weight: 500;
+}
+
+@media (max-width:400px) {
+    .proposito p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .qs1 h2{
+        padding: 5px;
+        font-size: 18px;
+        margin: auto;
+        color: #10222e;
+        text-align: left;
+    }
+
+    .qs2 h2{
+        padding: 5px;
+        font-size: 18px;
+        margin: auto;
+        color: #10222e;
+        text-align: right;
+    }
+    
+    .qs3 h2{
+        padding: 5px;
+        font-size: 18px;
+        margin: auto;
+        color: #10222e;
+        text-align: left;
+    }
+    .proposito2{
+        width: 50%;
+        height: auto;
+    }
+    
+    .proposito2 p{
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        color: #10222e;
+        font-weight: 500;
+    }
 }

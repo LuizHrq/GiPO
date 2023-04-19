@@ -12,7 +12,7 @@ const schema = yup.object({
                .required("O e-mail é obrigatório"),
     cpf : yup.string().min(11,"O CPF deve ter pelo menos 11 dígitos!")
              .required("O CPF é obrigatório"),
-    cep : yup.string().min(9,"O CEF deve ter pelo menos 9 dígitos!")
+    cep : yup.string().min(9,"O CEP deve ter pelo menos 9 dígitos!")
              .required("O CPF é obrigatório"),
     senha: yup.string().required('A senha é obrigatória')
              .min(8, 'A senha deve ter pelo menos 8 caracteres'),
@@ -52,76 +52,68 @@ export default function EtiquetasHookForm(){
     return(
         <>
             <div className='formulario'>
-            <form onSubmit={handleSubmit(inserirUsuario)}>
+                <form onSubmit={handleSubmit()}>
+                    <div className='tituloformulario'>
+                        <h2>CRIE SUA CONTA GiPO</h2>
+                    </div>
+                    <div className='dadospessoais'>
+                        <fielset>
+                        <legend>Dados Pessoais</legend>
+                            <label>Nome:<br/>
+                                <input type="text" {...register('nome')}/>
+                                <span>{errors.nome?.message}</span><br/>
+                            </label>
+                            <label>E-Mail:<br/>
+                                <input type="text" {...register('email')} />
+                                <span>{errors.email?.message}</span><br/>
+                            </label>
+                        
+                            <label>CPF:<br/>
+                                <input ptype="text" {...register('cpf')} />
+                                <span>{errors.cpf?.message}</span><br/>
+                            </label>
 
-            <h2>CRIE SUA CONTA GiPO</h2>
+                            <label>Senha:<br/>
+                                <input type="password" {...register("senha")} />
+                                <span>{errors.senha?.message}</span><br/>
+                            </label>
 
-                <fielset className="dadospessoais">
-                    <legend>Dados Pessoais</legend>
-                    <label>Nome: <br/>
-                        <input type="text" {...register('nome')}/>
-                        <span>{errors.nome?.message}</span>
-                    </label>
-                    <br/>
-                    <label>E-Mail:<br/>
-                        <input type="text" {...register('email')} />
-                        <span>{errors.email?.message}</span>
-                    </label>
-                    <br/>
-                    <label>CPF:<br/>
-                        <input type="text" {...register('cpf')} />
-                        <span>{errors.cpf?.message}</span>
-                    </label>
-                    <br/>
-
-                    <label>Senha:<br/>
-                        <input type="password" {...register("senha")} />
-                        <span>{errors.senha?.message}</span>
-                    </label>
-                    <br/>
-                    <label>Confirme a senha:<br/>
-                        <input type="password" {...register("confirmaSenha")} />
-                        <span>{errors.confirmaSenha?.message}</span>
-                    </label>
-                    <br/>
-
-
+                            <label>Confirme a senha:<br/>
+                                <input type="password" {...register("confirmaSenha")} />
+                                <span>{errors.confirmaSenha?.message}</span><br/>
+                            </label>
+                        </fielset>
+                    </div>
 
 
-                    <br/>
-                </fielset>
-
-                <fieldset className='endereco'>
-                    <legend>Endereço</legend>
-                    <label>CEP:<br/>
-                        <input type="text" {...register("cep")} onBlur={buscarCep}/>
-                        <span>{errors.cep?.message}</span>
-                    </label>
-                    <br/>
-                    <label>Rua:<br/>
-                        <input type="text" {...register("rua")}/>
-                    </label>
-                    <br/>
-                    <label>Número:<br/>
-                        <input type="text" {...register("numero")}/>
-                    </label>
-                    <br/>
-                    <label>Bairro:<br/>
-                        <input type="text" {...register("bairro")}/>
-                    </label>
-                    <br/>
-                    <label>Cidade:<br/>
-                        <input type="text" {...register("cidade")}/>
-                    </label>
-                    <br/>
-                    <label>Estado:<br/>
-                        <input type="text" {...register("estado")}/>
-                    </label>
-                </fieldset>
-
-                <button type="submit">CRIAR</button>
-            
-            </form>
+                    <div className='endereco'>
+                        <fielset>
+                        <legend>Endereço</legend>
+                            <label>CEP:<br/>
+                                <input type="text" {...register("cep")} onBlur={buscarCep}/>
+                                <span>{errors.cep?.message}</span><br/>
+                            </label>
+                            <label>Rua:<br/>
+                                <input type="text" {...register("rua")}/><br/>
+                            </label>
+                            <label>Número:<br/>
+                                <input type="text" {...register("numero")}/><br/>
+                            </label>
+                            <label>Bairro:<br/>
+                                <input type="text" {...register("bairro")}/><br/>
+                            </label>
+                            <label>Cidade:<br/>
+                                <input type="text" {...register("cidade")}/><br/>
+                            </label>
+                            <label>Estado:<br/>
+                                <input type="text" {...register("estado")}/><br/>
+                            </label>
+                        </fielset>
+                    </div>
+                <div className='botaocriar'>
+                    <button type="submit">CRIAR</button>
+                </div>
+                </form>
             </div>
         </>
     )

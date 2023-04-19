@@ -6,7 +6,7 @@ export default function Footer(){
         <>
         
             <footer className="rodape">
-                <div class="container">
+                <div className="container">
                     <p>© 2023 Todos os direitos reservados.</p>
                 </div>
             </footer>

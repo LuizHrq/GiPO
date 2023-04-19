@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
-import Conteudo1 from "../Conteudo1/Conteudo1";
-import Testes from "../Testes/Testes";
+import Conteudo1 from "./Conteudo1/Conteudo1";
+import Quiz1 from "./Quiz1/Quiz1";
 import './Fase1.css';
 import Footer from "../Footer/Footer";
 
@@ -17,7 +17,7 @@ export default function Fase1(){
                 <iframe  src="https://www.youtube.com/embed/_Df1ycT2SVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
-            <Testes/>
+            <Quiz1/>
             <Footer/>
         </>
     )
