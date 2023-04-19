@@ -38,7 +38,14 @@ export default function Login (){
                     <input type="password"/>
                     </label>
                     <br></br>
-                    <input type="checkbox" id="confirm"/><label for="confirm">Lembrar meu acesso</label>
+
+                    <div className='checkbox'>
+                        <input type="checkbox" id="confirm"/>
+                    </div>
+
+                    <div className='labelcheckbox'>
+                        <label for="confirm">Lembrar meu acesso</label>
+                    </div>
 
                     <div className='botaologar'>
                         <button type="submit">ENTRAR</button>
