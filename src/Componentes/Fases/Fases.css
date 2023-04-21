@@ -1,34 +1,31 @@
 .blocos{
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    background-color: #98422F;
     display:block;
-    padding: 30px 0;
+    width: 75%;
+    height: auto;
+    margin: 50px auto;
+    padding: 50px 0;
+    border-radius: 30px;
+    background-color: #10222e;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
-    margin-bottom: 50px;
 }
-
 
 .fase1{
     display: flex;
     width: 48%;
     height: 150px;
     background-color: #FFF5D0;
-    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom:30px;
     border-radius: 0 30px 30px 0;
-    text-decoration: none;
 }
 .fase1 h2{
-    text-decoration: none;
-    width: auto;
-    height: auto;
-    font-size: 20px;
-    margin: auto;
+    width: 100%;
+    font-size: 23px;
+    align-items:left;
+    margin-left: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
     color: #BF712C;
-    text-decoration: none;
 }
 
 .fase2{
@@ -36,19 +33,16 @@
     width: 48%;
     height: 150px;
     background-color: #FFF5D0;
-    margin-top: 0;
     margin-left: auto;
-    margin-top: 0;
     border-radius: 30px 0 0 30px;
 }
 .fase2 h2{
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 30px;
+    width: 100%;
+    font-size: 23px;
+    text-align: right;
+    margin-right: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
     color: #BF712C;
 }
 
@@ -58,16 +52,16 @@
     height: 150px;
     background-color: #FFF5D0;
     margin-top: 0;
+    margin-bottom:00px;
     border-radius: 0 30px 30px 0;
 }
 .fase3 h2{
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 30px;
+    width: 100%;
+    font-size: 23px;
+    align-items:left;
+    margin-left: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
     color: #BF712C;
 }
 
@@ -77,19 +71,17 @@
     width: 48%;
     height: 150px;
     background-color: #FFF5D0;
-    margin-top: 0;
+    margin-top: -50;
     margin-left: auto;
-    margin-top: 0;
     border-radius: 30px 0 0 30px;
 }
 .fase4 h2{
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 30px;
+    width: 100%;
+    font-size: 23px;
+    text-align: right;
+    margin-right: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
     color: #BF712C;
 }
 
@@ -98,85 +90,345 @@
     width: 48%;
     height: 150px;
     background-color: #FFF5D0;
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin:0;
     border-radius: 0 30px 30px 0;
 }
 .fase5 h2{
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 30px;
+    width: 100%;
+    font-size: 23px;
+    text-align: left;
+    margin-left: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
     color: #BF712C;
 } 
 
-@media (min-width:315px) {
+@media (max-width:600px) {
     .blocos{
         width: 90%;
-        background-color: #10222e;
-        border-radius: 30px;
     }
     .fase1{
-        display: flex;
-        width: 80%;
-        height: 130px;
-        margin-bottom: 30px;
+        width: 60%;
+        height: 110px;
+        margin-top: 0;
+        margin-bottom:30px;
+        text-align: left;
     }
     .fase1 h2{
-        width: auto;
+        width: 100%;
+        height: auto;
+        font-size: 17px;
+        margin-left: 20px;
+    }
+    .fase2{
+        width: 60%;
+        height: 110px;
+        margin-bottom:30px;
+    }
+    .fase2 h2{
+        width: 100%;
+        height: auto;
+        font-size: 17px;
+        text-align: right;
+        margin-right: 20px;
+        
+    }
+    .fase3{
+        width: 60%;
+        height: 110px;
+        margin-top: 0;
+        margin-bottom:10px;
+        text-align: left;
+    }
+    .fase3 h2{
+        width: 100%;
+        height: auto;
+        font-size: 17px;
+        margin-left: 20px;
+    }
+    .fase4{
+        width: 60%;
+        height: 110px;
+        margin-top: 0;
+        margin-bottom:30px;
+    }
+    .fase4 h2{
+        width: 100%;
+        height: auto;
+        font-size: 17px;
+        text-align: right;
+        margin-right: 20px;
+    }
+    .fase5{
+        width: 60%;
+        height: 110px;
+        margin: 0;
+        text-align: left;
+    }
+    .fase5 h2{
+        width: 100%;
         height: auto;
         font-size: 18px;
         text-align: left;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width:600px) {
+    .blocos{
+        width: 85%;
+    }
+    .fase1{
+        width: 55%;
+        height: 130px;
+    }
+    .fase1 h2{
+        font-size: 19px;
+        margin-left: 30px;
     }
     .fase2{
-        display: flex;
-        width: 80%;
+        width: 55%;
         height: 130px;
-        margin-bottom: 30px;
     }
     .fase2 h2{
-        width: auto;
-        height: auto;
-        font-size: 18px;
+        font-size: 19px;
         text-align: right;
     }
     .fase3{
-        display: flex;
-        width: 80%;
+        width: 55%;
         height: 130px;
-        margin-bottom: 30px;
     }
     .fase3 h2{
-        width: auto;
-        height: auto;
-        font-size: 18px;
-        text-align: left;
+        font-size: 19px;
+        margin-left: 30px;
     }
     .fase4{
-        display: flex;
-        width: 80%;
+        width: 55%;
         height: 130px;
-        margin-bottom: 30px;
     }
     .fase4 h2{
-        width: auto;
-        height: auto;
-        font-size: 18px;
+        font-size: 19px;
         text-align: right;
     }
     .fase5{
-        display: flex;
-        width: 80%;
+        width: 55%;
         height: 130px;
-        margin-bottom: 30px;
     }
     .fase5 h2{
-        width: auto;
+        font-size: 19px;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width:768px) {
+    .blocos{
+        width: 85%;
+    }
+    .fase1{
+        width: 55%;
+        height: 120px;
+        margin-top: 0;
+        margin-bottom:30px;
+        text-align: left;
+    }
+    .fase1 h2{
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    .fase2{
+        width: 55%;
+        height: 120px;
+        margin-bottom:30px;
+    }
+    .fase2 h2{
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        text-align: right;
+        margin-right: 50px;
+        
+    }
+    .fase3{
+        width: 55%;
+        height: 120px;
+        margin-top: 0;
+        margin-bottom:30px;
+        text-align: left;
+        margin-bottom:10px;
+    }
+    .fase3 h2{
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    .fase4{
+        width: 55%;
+        height: 120px;
+        margin-bottom:30px;
+    }
+    .fase4 h2{
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .fase5{
+        width: 55%;
+        height: 120px;
+        margin-top: 0;
+        text-align: left;
+    }
+    .fase5 h2{
+        width: 100%;
         height: auto;
         font-size: 18px;
         text-align: left;
+        margin-left: 50px;
+    }
+}
+
+@media (min-width:900px) {
+    .blocos{
+        width: 75%;
+    }
+    .fase1{
+        width: 52%;
+        height: 120px;
+        margin-top: 0;
+        margin-bottom:30px;
+        text-align: left;
+    }
+    .fase1 h2{
+        width: 100%;
+        height: auto;
+        font-size: 19px;
+        margin-left: 40px;
+    }
+    .fase2{
+        width: 52%;
+        height: 120px;
+        margin-bottom:30px;
+    }
+    .fase2 h2{
+        width: 100%;
+        height: auto;
+        font-size: 19px;
+        text-align: right;
+        margin-right: 40px;
+        
+    }
+    .fase3{
+        width: 52%;
+        height: 120px;
+        margin-top: 0;
+        margin-bottom:30px;
+        text-align: left;
+        margin-bottom:10px;
+    }
+    .fase3 h2{
+        width: 100%;
+        height: auto;
+        font-size: 19px;
+        margin-left: 40px;
+    }
+    .fase4{
+        width: 52%;
+        height: 120px;
+        margin-bottom:30px;
+    }
+    .fase4 h2{
+        width: 100%;
+        height: auto;
+        font-size: 19px;
+        text-align: right;
+        margin-right: 40px;
+    }
+    .fase5{
+        width: 52%;
+        height: 120px;
+        margin-top: 0;
+        text-align: left;
+    }
+    .fase5 h2{
+        width: 100%;
+        height: auto;
+        font-size: 19px;
+        text-align: left;
+        margin-left: 40px;
+    }
+}
+
+@media (min-width:1000px) {
+    .blocos{
+        width: 65%;
+    }
+    .fase1{
+        width: 48%;
+        height: 130px;
+        margin-top: 0;
+        margin-bottom:30px;
+        text-align: left;
+    }
+    .fase1 h2{
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        margin-left: 60px;
+    }
+    .fase2{
+        width: 48%;
+        height: 130px;
+        margin-bottom:30px;
+    }
+    .fase2 h2{
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        text-align: right;
+        margin-right: 60px;
+        
+    }
+    .fase3{
+        width: 48%;
+        height: 130px;
+        margin-top: 0;
+        margin-bottom:30px;
+        text-align: left;
+        margin-bottom:10px;
+    }
+    .fase3 h2{
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        margin-left: 60px;
+    }
+    .fase4{
+        width: 48%;
+        height: 130px;
+        margin-bottom:30px;
+    }
+    .fase4 h2{
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        text-align: right;
+        margin-right: 60px;
+    }
+    .fase5{
+        width: 48%;
+        height: 130px;
+        margin-top: 0;
+        text-align: left;
+    }
+    .fase5 h2{
+        width: 100%;
+        height: auto;
+        font-size: 19px;
+        text-align: left;
+        margin-left: 60px;
     }
 }

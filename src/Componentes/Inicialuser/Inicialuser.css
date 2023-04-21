@@ -77,8 +77,8 @@
         margin-bottom:0 ;
     }
     #gipopersona{
-        width: 280px;
-        height: 310px;
+        width: 270px;
+        height: 340px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -94,7 +94,7 @@
         margin-left: auto;
     }
     .fases h2{
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
         padding: 30px;
     }
@@ -129,7 +129,7 @@
     .boasvindas{
         display: flex;
         width: 100%;
-        height: 200px;
+        height: 100px;
         margin-right: auto;
         margin-top: 30px;
         justify-content: center;
@@ -138,40 +138,52 @@
     .boasvindas h2{
         text-align: center;
         justify-content: center;
+        height: auto;
     }
     #gipopersona{
         display: flex;
         width: 350px;
-        height: 440px;
+        height: 420px;
         float: right;
         margin-right: auto;
         margin-left: auto;
+    }
+    .fases h2{
+        font-size: 18px;
+        text-align: center;
+        padding: 40px;
     }
 }
 
 @media (min-width: 992px) {
     .boasvindas{
-        display: flex;
         width: 40%;
-        height: 300px;
-        margin-right: auto;
-        margin-top: 30px;
+        height: 500px;
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
     }
     
     .boasvindas h2{
-        text-align: center;
-        justify-content: center;
         font-size: 30px;
-        margin-left: 90px;
+        margin: auto;
+        text-align: center;
     }
     
     #gipopersona{
         display: flex;
         width: 400px;
         height: 500px;
-        float: right;
-        margin-right: 50px;  
+        margin-right: 10px;  
+    }
+    .fases{
+        height: 120px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .fases h2{
+        font-size: 19px;
+        margin: auto;
     }
 }
-

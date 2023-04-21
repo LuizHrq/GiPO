@@ -102,6 +102,9 @@ h3{
     color:#546975;
     transition:0.1s;
 }
+a{
+    text-decoration: none;
+}
 
 @media (max-width:600px) {
     #logoinicial{
