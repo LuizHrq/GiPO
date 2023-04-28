@@ -21,15 +21,19 @@ export default function Conteudo1(){
                     </div>
             </div>
 
+
             <div className="container2">
-            <div className="texto2">
-                <h1>JORNADA DA COMPANHIA DURANTE O IPO</h1>
-                <p>A realidade é
-                    que o processo de IPO é bem complexo, rígido, regulamentado e demorado
-                    que envolve vários agentes. Empresas gastam milhões para abrir seu
-                    capital, podendo levar mais de 1 ano para conclusão de todas as etapas.
-                    Falaremos mais sobre isso nas próximas fases.
-                </p>
+                <div className="texto2">
+                    <h1>JORNADA DA COMPANHIA DURANTE O IPO</h1>
+                    <p>A realidade é
+                        que o processo de IPO é bem complexo, rígido, regulamentado e demorado
+                        que envolve vários agentes. Empresas gastam milhões para abrir seu
+                        capital, podendo levar mais de 1 ano para conclusão de todas as etapas.
+                        Falaremos mais sobre isso nas próximas fases.
+                    </p>
+                </div>
+            <div className="texto2img">
+                        <img id="imganalise" src="./img/img_persona_gipo/analise.png" alt="imagem analise"></img>
             </div>
             </div>
         </>
