@@ -1,0 +1,58 @@
+.titlefase1{
+    display: flex;
+    color:#013750;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.video-container {
+  width: 80%;
+  margin: 30px auto 30px auto;
+  padding: 20px;
+  padding-bottom: 30%;
+  position: relative;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  width: 60%;
+  height: 89%;
+}
+
+@media (min-width: 315px) {
+  .titlefase1{
+    font-size: 25px;
+}
+  .video-container {
+    width: 80%;
+    padding-bottom: 40%;
+  }
+  .video-container iframe {
+    left: 10%;
+    width: 80%;
+    height: 89%;
+  }
+}
+
+@media (min-width: 600px) {
+  .video-container {
+    width: 80%;
+    padding-bottom: 40%;
+  }
+  .video-container iframe {
+    left: 10%;
+    width: 80%;
+    height: 90%;
+  }
+}
+
+
+  

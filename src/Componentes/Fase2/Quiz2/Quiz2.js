@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Quiz1.css';
+import './Quiz2.css';
 
-function Quiz1() {
+function Quiz2() {
   const [answer, setAnswer] = useState('');
   const [isCorrect, setIsCorrect] = useState(false);
   const [showResult, setShowResult] = useState(false); // nova variável de estado para controlar a exibição da mensagem de resposta
@@ -54,4 +54,4 @@ function Quiz1() {
   );
 }
 
-export default Quiz1;
+export default Quiz2;

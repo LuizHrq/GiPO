@@ -1,5 +1,6 @@
 import './Header.css'
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 export default function Header() {    
   const [showMenu, setShowMenu] = useState(false);
@@ -10,7 +11,7 @@ export default function Header() {
 
   return (
     <header>
-      <a href={"/"}><img id="logo" src="./img/logogipo1.png" alt="imagem logo"></img></a>
+      <Link to={"/fase1"}><img id="logo" src="./img/logogipo1.png" alt="imagem logo"></img></Link>
       
       <div className="hamburger-menu" onClick={handleMenuClick}>
         <span></span>
@@ -18,9 +19,9 @@ export default function Header() {
         <span></span>
       </div>
       <ul className={`menu ${showMenu ? 'show' : ''}`}>
-        <li><a href={"/user"}>Fases</a></li>
-        <li><a href={"/quemsomos"}>Quem somos</a></li>
-        <li><a href={"/"}>Desconectar</a></li>
+        <li><Link to={"/user"}>Fases</Link></li>
+        <li><Link to={"/quemsomos"}>Quem somos</Link></li>
+        <li><Link to={"/"}>Desconectar</Link></li>
       </ul>
     </header>
   );

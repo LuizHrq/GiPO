@@ -26,6 +26,11 @@
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
 }
 
+a{
+    text-decoration: none;
+    color: #10222e;
+}
+
 .dev{
     display: fixed;
     width: 180px;
@@ -63,7 +68,7 @@ h5{
         margin-bottom: 50px;
     }
     .dev{
-        width: 110px;
+        width: 125px;
     }
     h4{
         font-size: 12px;
@@ -84,7 +89,6 @@ h5{
         border-radius: 50%;
     }
 }
-
 @media (min-width:400px) {
     .titulotime h2{
         font-size: 20px;
@@ -92,6 +96,29 @@ h5{
     }
     .time{
         width: 70%;
+        margin: 30px auto;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .dev{
+        width: 140px;
+    }
+    h4{
+        font-size: 13px;
+    }
+    h5{
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width:600px) {
+    .titulotime h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .time{
+        width: 80%;
         margin: 30px auto;
         padding: 30px;
         margin-bottom: 50px;
@@ -108,17 +135,20 @@ h5{
         margin-bottom: 10px;
     }
 }
-
 @media (min-width:768px) {
     .titulotime h2{
         font-size: 23px;
         text-align: center;
     }
     .time{
-        width: 70%;
+        width: 80%;
         margin: 30px auto;
         padding: 30px;
         margin-bottom: 50px;
+    }
+    #dev{
+        width: 115px;
+        height: 115px;
     }
     
     .dev{
@@ -129,6 +159,32 @@ h5{
     }
     h5{
         font-size: 11px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width:900px) {
+    .titulotime h2{
+        font-size: 22px;
+        text-align: center;
+    }
+    .time{
+        width: 650px;
+        margin: 30px auto;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+    #dev{
+        width: 115px;
+        height: 115px;
+    }
+    .dev{
+        width: 150px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    h5{
+        font-size: 10px;
         margin-bottom: 10px;
     }
 }

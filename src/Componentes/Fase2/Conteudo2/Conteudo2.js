@@ -1,7 +1,7 @@
 import React from "react";
-import './Conteudo1.css';
+import './Conteudo2.css';
 
-export default function Conteudo1(){
+export default function Conteudo2(){
     return(
         <>
             <div className="container1">
@@ -13,7 +13,7 @@ export default function Conteudo1(){
                         de valores, tornando-se uma companhia de capital aberto - conhecidas como S.A, Sociedade Anônima.
                         Os motivos que levam empresas a realizarem o IPO se dá por objetivos de captar mais
                         recursos financeiros, expandir os negócios ou até mesmo no intuito de agregar capital
-                        para realizar aquisições de concorrentes das suas áreas de atuação no mercado - os conhecidos M&A's (Mergers and Acquisitions).
+                        para realizar aquisições de concorrentes das suas áreas de atuação no mercado - os conhecidos M&A (Merger and Acquisition).
                     </p> 
                 </div>
                     <div className="texto1img">
@@ -25,9 +25,9 @@ export default function Conteudo1(){
             <div className="container2">
                 <div className="texto2">
                     <h1>JORNADA DA COMPANHIA DURANTE O IPO</h1>
-                    <p>O processo de IPO consiste em etapas complexas, rígidas e regulamentadas pela Comissão de Valores Mobiliários
-                        (CVM).
-                        As companhias alcançam valores na casa de milhões de reais para abrir seu
+                    <p>A realidade é
+                        que o processo de IPO é bem complexo, rígido, regulamentado e demorado
+                        que envolve vários agentes. Empresas gastam milhões para abrir seu
                         capital, podendo levar mais de 1 ano para conclusão de todas as etapas.
                         Falaremos mais sobre isso nas próximas fases.
                     </p>

@@ -10,6 +10,7 @@ import Inicialuser from './Componentes/Inicialuser/Inicialuser';
 import Quiz1 from './Componentes/Fase1/Quiz1/Quiz1';
 import Conteudo from './Componentes/Fase1/Conteudo1/Conteudo1';
 import Fase1 from './Componentes/Fase1/Fase1';
+import Fase2 from './Componentes/Fase2/Fase2';
 import Footer from './Componentes/Footer/Footer';
 import Quemsomos from './Componentes/Quemsomos/Quemsomos';
 import Time from './Componentes/Time/Time';
@@ -43,7 +44,8 @@ export default function App() {
           <Route path='/criarconta' element={<Criarconta/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/user' element={<Inicialuser/>}/>
-          <Route path='/fase1' element={<Fase1/>}/>
+          <Route path='/fase1/*' element={<Fase1/>}/>
+          <Route path='/fase2/*' element={<Fase2/>}/>
           <Route path='/quemsomos' element={<Quemsomos/>}/>
 
         </Routes>
