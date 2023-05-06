@@ -11,7 +11,7 @@ export default function Fase1(){
     return(
         <>
             <Header/>
-            <div className="titlefase1">Você está na fase 1</div>
+                <div className="titlefase1">Você está na fase 1</div>
             <Conteudo1/>
 
             <div class="video-container">

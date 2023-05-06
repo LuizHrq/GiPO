@@ -8,14 +8,13 @@
     background-color:#FFF5D0;
     color: #10222e;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-
 }
+
 
 .texto1{
     display: inline-block;
     width: 70%;
     height: auto;
-
 }
 .texto1 h1{
     display: block;
@@ -24,7 +23,7 @@
     font-size: 25px;
     color: #BF712C;
     align-items: right;
-    margin: 10px 0 10px 100px;
+    margin: 10px 0 10px 10px;
 }
 
 .texto1 p{
@@ -183,9 +182,10 @@
     }
 }
 
-@media (min-width:600px) {
+@media (min-width: 600px){
     .container1{
-        width: 75%;
+        width: 80%;
+        height: 370px;
     }
     
     .texto1{
@@ -201,7 +201,7 @@
         font-size: 25px;
         color: #BF712C;
         align-items: right;
-        margin: 10px 0 10px 10px;
+        margin: 0 0 10px 0px;
     }
     
     .texto1 p{
@@ -212,26 +212,26 @@
         color: #10222e;
         text-align: left;
         align-items: center;
-        margin: 10px 0 10px 10px;
+        margin: 10px 0 10px 0px;
     }
     
     .texto1img{
-        display: inline-block;
-        width: 40%;
-        height: 260px;
+        display: inline-binlock;
+        width: 36%;
+        height: 220px;
         text-align: center;
     }
     #personapensando{
         display: flex;
-        width: 220px;
-        height: 250px;
+        width: 180px;
+        height: 200px;
         margin-left: auto;
-        margin-top: 42px;
+        margin-top: 125px;
     }
     
     /*JORNADA DA COMPANHIA DURANTE O IPO*/
     .container2{
-        width: 75%;
+        width: 80%;
     }
     
     .texto2{
@@ -242,16 +242,12 @@
     
     }
     .texto2 h1{
-        display: flex;
+        display: block;
         width: auto;
         height: auto;
-        font-size: 25px;
+        font-size: 23px;
         color: #BF712C;
-        align-items: right;
-        justify-content: left;
-        margin: 0;
-        margin-right: auto;
-        margin-bottom: 10px;
+        text-align: right;
     }
     
     .texto2 p{
@@ -260,7 +256,7 @@
         height: auto;
         font-size: 15px;
         color: #10222e;
-        margin: 0;
+        text-align: right;
     }
     
     .texto2img{
@@ -272,4 +268,148 @@
     }
     
 }
+@media (min-width:768px) { 
+    .container1{
+        width: 75%;
+        height: 330px;
+    } 
+    .texto1{
+        display: inline-block;
+        width: 60%;
+        height: auto;
+    }
+    .texto1 h1{
+        font-size: 23px;
+        margin: 0;
+    }
+    
+    .texto1 p{
+        font-size: 15px;
+        margin: 10px 0 10px 0;
+    }
+
+    .texto1img{
+        display: inline-block;
+        width: 40%;
+        height: 260px;
+        text-align: center;
+    }
+    #personapensando{
+        display: flex;
+        width: 220px;
+        height: 250px;
+        margin-left: auto;
+        margin-top: 75px;
+    }
+    .container2{
+        width: 75%;
+    }
+    .texto2{
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    
+    }
+    .texto2 h1{
+        display: block;
+        width: auto;
+        height: auto;
+        font-size: 23px;
+        color: #BF712C;
+        text-align: right;
+    }
+    
+    .texto2 p{
+        display: block;
+        width: auto;
+        height: auto;
+        font-size: 15px;
+        color: #10222e;
+        text-align: right;
+    }
+    
+}
+@media(min-width:900px){
+    .container1{
+        width: 75%;
+        height: 330px;
+    } 
+    #personapensando{
+        display: flex;
+        width: 220px;
+        height: 250px;
+        margin-left: auto;
+        margin-top: 75px;
+    }
+    .texto1{
+        display: inline-block;
+        width: 90%;
+        height: auto;
+        margin-left: 35px;
+    
+    }
+    .texto2{
+        display: inline-block;
+        width: 90%;
+        height: auto;
+        margin-right: 70px;
+    
+    }
+    #personapensando{
+        display: flex;
+        width: 240px;
+        height: 280px;
+        margin-left: auto;
+        margin-top: 45px;
+    }
+}
+@media (min-width:1200px) { 
+    .container1{
+        width: 70%;
+    } 
+    .texto1{
+        display: inline-block;
+        width: 90%;
+        height: auto;
+        margin-left: 75px;
+    
+    }
+    .container2{
+        width: 70%;
+    }
+    
+    .texto2{
+        display: inline-block;
+        width: 90%;
+        height: auto;
+        margin-right: 100px;
+    
+    }
+    .texto2 h1{
+        display: block;
+        width: auto;
+        height: auto;
+        font-size: 25px;
+        color: #BF712C;
+        text-align: right;
+    }
+    
+    .texto2 p{
+        display: block;
+        width: auto;
+        height: auto;
+        font-size: 15px;
+        color: #10222e;
+        text-align: right;
+    }
+    #personapensando{
+        display: flex;
+        width: 270px;
+        height: 300px;
+        margin-left: auto;
+        margin-top: 25px;
+    }
+    
+}
+
 

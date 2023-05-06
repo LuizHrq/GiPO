@@ -131,10 +131,10 @@ header {
   #logo {
     width: 230px;
     height: 80px;
-    margin-left: 80px;
+    margin-left: 100px;
     margin-top: 5px;
   } 
   .menu {
-    margin-right: 80px;
+    margin-right: 100px;
   }
 }
