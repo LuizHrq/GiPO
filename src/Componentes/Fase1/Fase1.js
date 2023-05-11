@@ -1,8 +1,8 @@
 import React from "react";
 
 import Header from "../Header/Header";
-import Conteudo1 from "./Conteudo1/Conteudo1";
-import Quiz1 from "./Quiz1/Quiz1";
+import Conteudo1 from "./ConteudoFase1/ConteudoFase1";
+import Quiz1 from "./QuizFase1/QuizFase1";
 import './Fase1.css';
 import Footer from "../Footer/Footer";
 

@@ -1,4 +1,5 @@
-
+import React from 'react';
+// import { useState, useEffect } from 'react';
 import './Login.css';
 import HeaderLogin from '../HeaderLogin/HeaderLogin';
 import Footer from '../Footer/Footer';
@@ -6,20 +7,18 @@ import Footer from '../Footer/Footer';
 
 export default function Login (){
 
-    // const [email, setEmail] = useState("");
-    // const [login, setLogin] = useState("");
-    // const Link = Link();
-  
-    // function handleLogin() {
-    //   const usuario = listaUsuario.find((u) => u.email === email && u.login === login);
-    //   if (usuario) {
-    //     Link("/inicialuser");
-    //   } else {
-    //     alert("Dados inválidos");
-    //     setEmail("");
-    //     setLogin("");
-    //   }
-    // }
+    // //criei um estado para armazenar os usuários
+    // const [usuarios, setUsuarios] = useState([])
+    //     useEffect(() => {
+    //         fetch("http://localhost:8080/GipoApp/rest/usuario").then((resp)=>{
+    //             return resp.json();
+    //     }).then((resp)=>{
+    //             setUsuarios(resp);
+    //             console.log(resp);
+    //         }).catch((erros)=>{
+    //             console.log(erros);
+    //         });
+    //     },[])
 
 
     return(

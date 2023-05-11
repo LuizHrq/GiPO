@@ -1,5 +1,5 @@
 import React from "react";
-import './Conteudo1.css';
+import './ConteudoFase1.css';
 
 export default function Conteudo1(){
     return(
