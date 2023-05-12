@@ -20,7 +20,6 @@
     justify-content: center;
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 .formulario form{
     display: flex;
@@ -61,41 +60,7 @@
     font-size: 13px;
 }
 
-
-/*DIV ENDEREÇO*/
-.endereco{
-    flex: 1;
-    flex-basis: 20%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 0px;
-    align-items: center;
-}
-.endereco label{
-    font-size: 14px;
-    color:#10222e;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
-}
-.endereco input{
-    display: flex;
-    width: 350px;
-    height: 25px;
-    background-color: #fafafa;
-    border-radius: 5px;
-    border: 1px solid #10222e;
-    font-size: 13px;
-}
-
 .botaocriar{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.botaocriar button{
     display: block;
     background-color: #6af039;
     border: none;
@@ -117,24 +82,11 @@
     color: #63a54b;
     transition:0.1s;
 }
-
-fieldset{
-    border: none;
-    margin: 0;
-    padding: 0;
-}   
-
-legend{
-    font-size: 18px;
-    color:#10222e;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
-}
 span{
     display: inline-block;
     color: red;
     font-size: 12px;
+    font-weight: bold;
 }
 
 @media (min-width:300px) {

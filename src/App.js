@@ -22,7 +22,7 @@ import { Helmet } from 'react-helmet';
 
 export default function App() {
   return (
-    <>
+    <div className='tudo'>
     <Helmet>
       <meta charSet='utf-8'/>
       <title>GiPO</title>
@@ -51,7 +51,7 @@ export default function App() {
 
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

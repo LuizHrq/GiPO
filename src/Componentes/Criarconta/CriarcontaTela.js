@@ -1,14 +1,14 @@
 import React from 'react';
 import Header2 from "../HeaderCadastro/HeaderCadastro";
 import Footer from '../Footer/Footer';
-import EtiquetasHookForm from './CriarConta';
+import CriarConta2 from './CriarConta2';
 
 export default function CriarcontaTela(){
     
     return(
         <>
             <Header2/>
-            <EtiquetasHookForm/>
+            <CriarConta2/>
             <Footer/>
         </>
     )
