@@ -50,32 +50,41 @@ export default function CriarConta2() {
   }
 
   return (
-    <form onSubmit={handleSubmit(Cadastro)}>
-      <label htmlFor="nome">Nome:</label>
-      <input type="text" id="nome" {...register("nome")} />
-      {errors.nome && <span>{errors.nome.message}</span>}
-      <br></br>
+    <div className="containerCadastro"> 
 
-      <label htmlFor="email">Email:</label>
-      <input type="email" id="email" {...register("email")} />
-      {errors.email && <span>{errors.email.message}</span>}
-      <br></br>
+      <div className="formulario">
 
-      <label htmlFor="cpf">CPF:</label>
-      <input type="text" id="cpf" {...register("cpf")} />
-      {errors.cpf && <span>{errors.cpf.message}</span>}
-      <br></br>
+        <h1 className="tituloformulario">Criar conta</h1>
+        <form onSubmit={handleSubmit(Cadastro)}>
+          <label htmlFor="nome">Nome:</label>
+          <input type="text" id="nome" {...register("nome")} />
+          {errors.nome && <span>{errors.nome.message}</span>}
+          <br></br>
 
-      <label htmlFor="senha">Senha:</label>
-      <input type="password" id="senha" {...register("senha")} />
-      {errors.senha && <span>{errors.senha.message}</span>}
-      <br></br>
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" {...register("email")} />
+          {errors.email && <span>{errors.email.message}</span>}
+          <br></br>
 
-      <label htmlFor="confirmaSenha">Confirmar Senha:</label>
-      <input type="password" id="confirmaSenha" {...register("confirmaSenha")} />
-      {errors.confirmaSenha && <span>{errors.confirmaSenha.message}</span>}
+          <label htmlFor="cpf">CPF:</label>
+          <input type="text" id="cpf" {...register("cpf")} />
+          {errors.cpf && <span>{errors.cpf.message}</span>}
+          <br></br>
 
-      <button type="submit" className="botaocriar">Cadastrar</button>
-    </form>
+          <label htmlFor="senha">Senha:</label>
+          <input type="password" id="senha" {...register("senha")} />
+          {errors.senha && <span>{errors.senha.message}</span>}
+          <br></br>
+
+          <label htmlFor="confirmaSenha">Confirmar Senha:</label>
+          <input type="password" id="confirmaSenha" {...register("confirmaSenha")} />
+          {errors.confirmaSenha && <span>{errors.confirmaSenha.message}</span>}
+          
+          <div className="button">
+            <button type="submit" className="botaocriar">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 }
