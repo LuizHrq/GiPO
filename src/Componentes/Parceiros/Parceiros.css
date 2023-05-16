@@ -42,16 +42,17 @@
 @media(max-width: 600px) {
 
     .tituloparceiros h2{
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
     }
     
     .parceiros{
         display: flex;
-        width: 280px;
+        width: 260px;
         height: 190px;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 40px;
 
     }
     
@@ -68,5 +69,17 @@
         width: 170px;
         height: auto;
         margin: 0;
+    }
+}
+@media(min-width: 600px){
+    .tituloparceiros h2{
+        font-size: 18px;
+    }
+}   
+@media(min-width: 900px){
+    .parceiros{
+        display: flex;
+        width: 600px;
+        height: 120px;
     }
 }

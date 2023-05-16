@@ -7,7 +7,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
 }
 .proposito p{
@@ -28,7 +28,7 @@
     background-color: #FFF5D0;
     margin: 90px auto;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
 }
 
@@ -117,10 +117,18 @@
 }
 
 @media (max-width:400px) {
+    .linhadireita{
+        width: 54%;
+    }
+    .linhaesquerda{
+        width: 54%;
+
+    }
     .proposito{
         margin-top: 30px;
         margin-bottom: 30px;
         padding: 10px;
+        border-radius: 10px;
     }
 
     .proposito p{
@@ -132,41 +140,46 @@
     }
 
     .qs1 h2{
-        padding: 5px;
+        padding: 5px 0 5px 5px; 
         font-size: 15px;
-        margin: auto;
         color: #10222e;
         text-align: right;
         margin-bottom: 2px;
+        margin-right: 5px;
     }
     .qs2{
+        width: 200px;
         height:100px;
         margin-bottom: 0;
     }
     .qs2 h2{
-        padding: 5px;
+        width: 500px;
+        padding: 5px 5px 5px 0; 
         font-size: 15px;
         margin: auto;
         color: #10222e;
         text-align: left;
         margin-bottom: 2px;
+        margin-left: 5px;
     }
     .qs3{
         height:100px
     }
     .qs3 h2{
-        padding: 5px;
+        padding: 5px 0 5px 5px; 
         font-size: 15px;
         margin: auto;
         color: #10222e;
         text-align: right;
         margin-bottom: 2px;
+        margin-right: 5px;
     }
     .proposito2{
         width: 50%;
         height: auto;
         margin-top: 50px;
         margin-bottom: 50px;
+        border-radius: 10px;
     }
     
     .proposito2 p{
