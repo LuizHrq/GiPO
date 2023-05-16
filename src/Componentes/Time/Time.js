@@ -8,7 +8,7 @@ export default function Time(){
     return(
     <>
         <div className="titulotime">
-            <h2>Equipe de Desenvolvimento</h2>
+            <h2>EQUIPE DE DESENVOLVIMENTO</h2>
         </div>
         <div className="time">
 

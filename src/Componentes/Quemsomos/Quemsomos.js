@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import HeaderQS from "../HeaderQuemsomos/HeaderQS";
 import Time from "../Time/Time";
-
+import Parceiros from "../Parceiros/Parceiros";
 import './Quemsomos.css'
 
 export default function Quemsomos(){
@@ -39,7 +39,10 @@ export default function Quemsomos(){
                     <p>Nunca foi tão simples aprender IPO!</p>
                 </div> 
 
+
+
                 <Time/>
+                <Parceiros/>
                 <Footer/>
         </>
     )
