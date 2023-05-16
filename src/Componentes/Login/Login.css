@@ -1,44 +1,52 @@
-.titulologin{
-    display: block;
-    width: 100%;
-    color:#10222e;
-    font-weight: bold;
-    font-size: 15px;
-    margin-top: 0;
-    text-align: center;
-}
-.formulariologin{
+.containerCriarconta{
     display: flex;
-    width: 60%;
+    width: 100%;
+    height: 511px;
     justify-content: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fafafa;
-    padding:20px 20px;
-    border-radius: 20px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+    align-items: center;
 }
 
+.formulariologin{
+    display: block;
+    width: 300px;
+    height: 330px;
+    background-color: #fafafa;
+    padding: 10px 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+}
+.titulologin{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color:#10222e;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.formulariologin input:focus{
+    outline: none;
+    border: 1px solid #10222e;
+}
+
+.formulariologin label{
+    font-size: 15px;
+    color:#10222e;
+}
 .formulariologin input{
     display: flex;
-    width: 500px;
-    height: 28px;
+    width: 100%;
+    height: 25px;
     background-color: #fafafa;
     border-radius: 5px;
     border: 1px solid #10222e;
     font-size: 15px;
-    margin-bottom: 10px;
-}
-.formulariologin label{
-    font-size:16px;
-    color:#10222e;
-    font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
+    color: #505050;
+    padding: 0;
 }
 
 .checkbox{
@@ -50,7 +58,7 @@
     display: inline-block;
     width: 95%;
     height: 10px;
-    margin-left: -5px;
+    margin-left:0;
 }
 #confirm{
     width: 15px;
@@ -58,34 +66,44 @@
     margin: 0;
 }
 
-@media (min-width:315px) {
+
+@media (max-width:400px) {
     .formulariologin{
-        width: 80%;
-        margin-top: 65px;
-        margin-bottom: 65px;
+        width: 65%;
+        height: 330px;
+    }
+    .titulologin{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+    .formulariologin label{
+        font-size: 14px;
+        color:#10222e;
     }
     .formulariologin input{
-        width: 250px;
-        height: 28px;
+        font-size: 13px;
     }
-    .botaologar button{
-        display: block;
-        width: 50%;
-        height: 40px;
-        font-size: 15px;
-        font-weight: 600;
-        padding: 12px;
-        margin-bottom: 10px;
-    }
+    
     .checkbox{
         display: inline-block;
-        width:5%;
+        width:3%;
         height: 13px;
     }
     .labelcheckbox{
         display: inline-block;
-        width: 80%;
+        width: 85%;
         height: 10px;
-        margin-left: 8px;
+        margin-left:10px;
+        font-size: 11px;
+    }
+    .labelcheckbox label{
+        font-size: 12px;
+    }
+    #confirm{
+        width: 15px;
+        height: 15px;
+        margin: 0;
     }
 }

@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header>
-      <Link to={"/fase1"}><img id="logo" src="./img/logogipo1.png" alt="imagem logo"></img></Link>
+      <Link to={"/user"}><img id="logo" src="./img/logogipo1.png" alt="imagem logo"></img></Link>
       
       <div className="hamburger-menu" onClick={handleMenuClick}>
         <span></span>

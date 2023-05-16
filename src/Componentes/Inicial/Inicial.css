@@ -1,7 +1,7 @@
 body{
     margin:0;
-    padding:0;
-    height: 100vh;
+    height: 100%;
+    position: relative;
     justify-content: center;
     align-items: center;
     background: #EBE7D9;

@@ -4,9 +4,6 @@ import './Inicial.css';
 
 
 export default function Inicial(){
-
-
-
     return(
         <>
         <img id="logoinicial" src="./img/logogipo2.png" alt="imagem logo"></img>
