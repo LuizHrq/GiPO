@@ -25,14 +25,11 @@ export default function CriarConta2() {
     },
   });
 
-
-
   //aparecer placeholder no input de email apenas ao clicar
   const [showPlaceholder, setShowPlaceholder] = useState(false);
   const handleFocus = () => {
     setShowPlaceholder(true);
   };
-
   const handleBlur = (event) => {
     if (event.target.value === "") {
       setShowPlaceholder(false);
@@ -42,8 +39,9 @@ export default function CriarConta2() {
   function Cadastro(dadosUsuario) {
     //VALIDAR DADOS
     schema.validate(dadosUsuario)
-    alert("Cadastro realizado com sucesso!");
     console.log("Dados válidos - Caastro realizado", dadosUsuario);
+    alert("Cadastro realizado com sucesso!");
+    window.location.href = "/login";
 
     //CADASTRAR NA API
     fetch("http://localhost:8080/GipoApp/rest/usuario", {
@@ -55,14 +53,15 @@ export default function CriarConta2() {
       body: JSON.stringify(dadosUsuario),
     })
     //retorna os dados em JSON
-      .then(function (response) { //
-        return response.json();
+      .then(function (response) {
+        alert("Cadastro realizado com sucesso!");
+        // Link.push("/login");
+        // return response.json();
       })
       //o que é retornado em JSON é armazenado em dadosUsuario e exibido no console do navegador
       .catch(function (error) {
         console.log(error)
       });
-    console.log(dadosUsuario);
   }
 
   return (
