@@ -17,6 +17,8 @@
     border-radius: 8px;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
 }
+
+
 .tituloformulario{
     display: flex;
     width: 100%;
@@ -39,15 +41,16 @@
     color:#10222e;
 }
 
-.formulario input{
+.formulario input, input-mask{
     display: flex;
-    width: 350px;
+    width: 100%;
     height: 25px;
     background-color: #fafafa;
     border-radius: 5px;
     border: 1px solid #10222e;
-    font-size: 13px;
+    font-size: 15px;
     color: #505050;
+    padding: 0;
 }
 
 .button{
@@ -103,9 +106,10 @@
     
     .formulario{
         width: 75%;
-        height: 460px;
-        padding: 10px 20px 0 20px;
+        height: 450px;
+        padding: 10px 20px 10px 20px;
     }
+
     .tituloformulario{
         width: 100%;
         margin-top: 5px;
@@ -119,13 +123,13 @@
         align-items: center;
     }
     
-    .formulario input{
-        display: flex;
-        width: 98%;
+    .formulario input, input-mask{
+        display: block;
+        width: 100%;
         height: 23px;
-        font-size: 11px;
+        font-size: 13px;
         color: #505050;
-        font-weight: bold;
+        padding: 0;
     }
 
     .botaocriar{
@@ -137,5 +141,6 @@
     }
     .formulario span{
         font-size: 10px;
+        font-weight: 500;
     }
 }

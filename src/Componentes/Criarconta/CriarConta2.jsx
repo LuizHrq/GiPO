@@ -1,14 +1,16 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useState } from "react";
+import InputMask from "react-input-mask";
 import * as yup from "yup";
 import './CriarConta.css';
 
 const schema = yup.object({
-  nome: yup.string().required("O nome é obrigatório"),
-  email: yup.string().email("Digite um email válido!").required("O e-mail é obrigatório"),
-  cpf: yup.string().min(11, "O CPF deve ter pelo menos 11 dígitos!").required("O CPF é obrigatório"),
-  senha: yup.string().required("A senha é obrigatória").min(8, "A senha deve ter pelo menos 8 caracteres"),
-  confirmaSenha: yup.string().oneOf([yup.ref("senha"), null], "As senhas não coincidem").required("Confirme sua senha"),
+  nome: yup.string().required("O campo nome é obrigatório!"),
+  email: yup.string().email("Digite um email válido!").required("O campo e-mail é obrigatório!"),
+  cpf: yup.string().min(14, "O campo CPF deve ter 11 dígitos!").required("O CPF é obrigatório!"),
+  senha: yup.string().required("A senha é obrigatória!").min(8, "A senha deve ter pelo menos 8 caracteres!"),
+  confirmaSenha: yup.string().oneOf([yup.ref("senha"), null], "As senhas não coincidem!").required("Confirme sua senha!"),
 });
 
 export default function CriarConta2() {
@@ -22,6 +24,20 @@ export default function CriarConta2() {
       confirmaSenha: "",
     },
   });
+
+
+
+  //aparecer placeholder no input de email apenas ao clicar
+  const [showPlaceholder, setShowPlaceholder] = useState(false);
+  const handleFocus = () => {
+    setShowPlaceholder(true);
+  };
+
+  const handleBlur = (event) => {
+    if (event.target.value === "") {
+      setShowPlaceholder(false);
+    }
+  };
 
   function Cadastro(dadosUsuario) {
     //VALIDAR DADOS
@@ -55,19 +71,21 @@ export default function CriarConta2() {
       <div className="formulario">
 
         <h1 className="tituloformulario">Criar conta</h1>
-        <form onSubmit={handleSubmit(Cadastro)}>
+
+        <form onSubmit={handleSubmit(Cadastro)} >
+
           <label htmlFor="nome">Nome:</label>
           <input type="text" id="nome" {...register("nome")} />
           {errors.nome && <span>{errors.nome.message}</span>}
           <br></br>
 
           <label htmlFor="email">Email:</label>
-          <input type="email" id="email" {...register("email")} />
+          <input type="email" id="email"{...register("email")} placeholder={showPlaceholder ? "example@example.com" : ""} onFocus={handleFocus} onBlur={handleBlur}/>
           {errors.email && <span>{errors.email.message}</span>}
           <br></br>
 
           <label htmlFor="cpf">CPF:</label>
-          <input type="text" id="cpf" {...register("cpf")} />
+          <InputMask mask="999.999.999-99" maskChar ="" type="text" id="cpf" className="input-mask" {...register("cpf")} />
           {errors.cpf && <span>{errors.cpf.message}</span>}
           <br></br>
 
