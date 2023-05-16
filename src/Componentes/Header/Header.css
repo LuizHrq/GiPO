@@ -13,40 +13,36 @@ header {
   margin-left: 30px;
 } 
 
+/* MENU NORMAL */
 .menu {
-  float: right;
   list-style: none;
-  margin: 0;
   padding: 50px;
   margin-left: auto;
   text-decoration: none;
 }
-  
-.menu li{
+
+.menu li {
   display: inline-block;
   margin-left: 20px;
   text-decoration: none;
-  color: #fff;
-
+  color: #EBE7D9;
 }
 
-.menu li a{
+.menu li a {
   text-decoration: none;
   color: #EBE7D9;
-
 }
-  
+
 .menu li:first-child {
   margin-left: 0;
 }
-
+/* MENU SANDUICHE ATIVA NO MAX 600PX */
 .hamburger-menu {
   display: none;
   margin-left: auto;
-  padding: 30PX;
+  padding: 50px;
   color: #10222e;
 }
-
 
 @media (max-width: 600px) {
   #logo {
@@ -55,59 +51,54 @@ header {
     margin-left: 15px;
     margin-top: 5px;
   } 
+
   .menu {
     display: none;
+    padding: 10px;
   }
-  
+
   .hamburger-menu {
     display: block;
     cursor: pointer;
+    padding: 25px;
   }
-  
+
   .hamburger-menu span {
     display: block;
-    width: 25px;
+    cursor: pointer;
+    width: 30px;
     height: 4px;
     background-color: #FFF5D0;
-    margin: 5px 0;
+    margin-top: 6px;
+  }
+  .hamburger-menu span:last-child {
+    margin-bottom: 0;
   }
 
   .menu.show {
-    display: block;
+    display: block !important;
     position: absolute;
     top: 100px;
     right: 0;
     background-color: #10222e;
     padding: 20px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 0 10px;
     list-style: none;
     margin: 0;
     text-align: right;
   }
-  
+
   .menu.show li {
     display: block;
     margin-bottom: 10px;
   }
-  
+
   .menu.show li a {
     color: #EBE7D9;
     font-size: 18px;
     text-decoration: none;
     font-size: 13px;
   }
-
-}
-
-@media (min-width: 400px) {
-  #logo {
-    width: 200px;
-    height: 70px;
-    margin-left: 20px;
-    margin-top: 10px;
-  } 
-
 }
 
 @media (min-width: 600px) {
@@ -118,12 +109,11 @@ header {
     margin-top: 5px;
   } 
 }
-
 @media (min-width: 768px) {
   #logo {
     width: 220px;
-    height: 80px;
-    margin-left: 30px;
+    height: 75px;
+    margin-left: 50px;
     margin-top: 5px;
   } 
 }
@@ -131,7 +121,7 @@ header {
   #logo {
     width: 230px;
     height: 80px;
-    margin-left: 100px;
+    margin-left: 120px;
     margin-top: 5px;
   } 
   .menu {

@@ -44,9 +44,23 @@ footer {
 }
   
 
-@media (min-width: 562px) {
-  .container {
-    max-width: 100%;
-    padding: 0 20px;
+@media (max-width: 562px) {
+  .containerSN a{
+    font-size: 13px;
+  }
+  
+  .containerInfo {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    z-index: 0;
+    margin-top: 40px;
+  }
+  
+  .containerInfo p {
+    text-align: center;
+    margin: 0;
+    font-size: 9px;
+    color: #EBE7D9;
   }
 }

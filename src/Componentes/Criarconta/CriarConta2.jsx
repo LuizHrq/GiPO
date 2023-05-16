@@ -83,6 +83,7 @@ export default function CriarConta2() {
           <div className="button">
             <button type="submit" className="botaocriar">Cadastrar</button>
           </div>
+          
         </form>
       </div>
     </div>

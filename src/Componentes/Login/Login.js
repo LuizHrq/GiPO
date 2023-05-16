@@ -91,9 +91,10 @@ const schema = yup.object({
                         <label for="confirm">Lembrar meu acesso</label>
                     </div>
 
-                    <div className='botaologar'>
-                        <button type="submit">ENTRAR</button>
+                    <div className="button">
+                      <button type="submit" className="botaocriar">ENTRAR</button>
                     </div>
+
                 </form>
             </div>
         <Footer/>

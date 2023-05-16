@@ -120,42 +120,47 @@
     .proposito{
         margin-top: 30px;
         margin-bottom: 30px;
+        padding: 10px;
     }
 
     .proposito p{
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 500;
     }
     .qs1{
-        height:135px;
+        height:90px;
     }
 
     .qs1 h2{
         padding: 5px;
-        font-size: 18px;
-        margin: auto;
-        color: #10222e;
-        text-align: left;
-    }
-    .qs2{
-        height:135px;
-    }
-    .qs2 h2{
-        padding: 5px;
-        font-size: 18px;
+        font-size: 15px;
         margin: auto;
         color: #10222e;
         text-align: right;
+        margin-bottom: 2px;
     }
-    .qs3{
-        height:135px
+    .qs2{
+        height:100px;
+        margin-bottom: 0;
     }
-    .qs3 h2{
+    .qs2 h2{
         padding: 5px;
-        font-size: 18px;
+        font-size: 15px;
         margin: auto;
         color: #10222e;
         text-align: left;
+        margin-bottom: 2px;
+    }
+    .qs3{
+        height:100px
+    }
+    .qs3 h2{
+        padding: 5px;
+        font-size: 15px;
+        margin: auto;
+        color: #10222e;
+        text-align: right;
+        margin-bottom: 2px;
     }
     .proposito2{
         width: 50%;
@@ -168,5 +173,6 @@
         margin: auto;
         color: #10222e;
         font-weight: 500;
+        font-size: 13px;
     }
 }

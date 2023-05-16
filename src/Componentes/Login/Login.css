@@ -41,23 +41,6 @@
     align-items: center;
 }
 
-.botaologar button{
-    display: block;
-    width: 40%;
-    height: 40px;
-    background-color: #8AF963;
-    color: #013750;
-    border: none;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
 .checkbox{
     display: inline-block;
     width:5%;
