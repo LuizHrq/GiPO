@@ -1,62 +1,88 @@
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from 'yup';
+import * as yup from "yup";
 import './Login.css';
 import HeaderLogin from '../HeaderLogin/HeaderLogin';
 import Footer from '../Footer/Footer';
 
-
 const schema = yup.object({
-    email: yup.string().email("Digite um email válido!").required("O e-mail é obrigatório"),
-    senha: yup.string().required('A senha é obrigatória').min(8, 'A senha deve ter pelo menos 8 caracteres'),
-  });
-  
-  export default function Login({ history }) {
-    const { register, getValues, formState: { errors } } = useForm({
-      resolver: yupResolver(schema),
-      defaultValues: {
-        email: '',
-        senha: '',
-      }
-    });
-  
-    function validarCredenciais(dadosUsuario) {
-      schema.validate(dadosUsuario)
-        .then((validateData) => {
-          console.log("Dados válidos", validateData);
-          const url = `http://localhost:8080/GipoApp/rest/usuario/login?email=${dadosUsuario.email}&senha=${dadosUsuario.senha}`;
-  
-          fetch(url)
-            .then(function (response) {
-              if (!response.ok) {
-                // setLoginError(true);
-                throw new Error("Erro ao fazer login");
-              }
-              return response.json(); // retorna os dados em JSON
-            })
-            .then(function (data) {
-              console.log(data);
-              // redirecionar o usuário para a tela de usuário
-              history.push('/user');
-            })
-            .catch(function (error) {
-              console.log(error);
-              // tratar o erro aqui, se necessário
-              // setLoginError(true);
-            });
-  
-        })
-        .catch(function (validationError) {
-          console.log(validationError.errors);
-          // tratar o erro de validação aqui, se necessário
-        });
-    }
-  
-    function handleSubmit(data) {
-      validarCredenciais(data);
-    }
+  email: yup.string().email("Digite um email válido!").required("O campo e-mail é obrigatório!"),
+  senha: yup.string().required("A senha é obrigatória!").min(8, "A senha deve ter pelo menos 8 caracteres!"),
+});
 
+export default function Login() {
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    resolver: yupResolver(schema),
+    defaultValues: {
+      email: "",
+      senha: "",
+    },
+  });
+
+  //aparecer placeholder no input de email apenas ao clicar
+  // const [showPlaceholder, setShowPlaceholder] = useState(false);
+  // const handleFocus = () => {
+  //   setShowPlaceholder(true);
+  // };
+  // const handleBlur = (event) => {
+  //   if (event.target.value === "") {
+  //     setShowPlaceholder(false);
+  //   }
+  // };
+
+  function handleLogin(dadosUsuario) {
+    // VALIDAR DADOS
+    schema
+      .validate(dadosUsuario)
+      .then(() => {
+        console.log("Dados inseridos:", dadosUsuario);
+  
+        // BUSCAR USUÁRIO NA API
+        fetch("http://localhost:8080/GipoApp/rest/usuario", {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then(function (response) {
+            if (response.ok) {
+              return response.json(); // Converte a resposta em JSON
+            } else {
+              throw new Error("Erro ao buscar usuários");
+            }
+          })
+          .then(function (data) {
+            const usuarioEncontrado = data.find(
+              (usuario) =>
+                usuario.email === dadosUsuario.email &&
+                usuario.senha === dadosUsuario.senha
+            );
+            if (usuarioEncontrado) {
+              console.log("Usuário autenticado com sucesso!");
+              
+              const nomeUsuario = usuarioEncontrado.nome;
+              localStorage.setItem("nomeUsuario", nomeUsuario);
+
+              alert("Login realizado com sucesso!");
+              window.location.href = "/user";
+
+            } else {
+              console.log("Dados de login inválidos");
+              throw new Error("Dados de login inválidos");
+            }
+          })
+          .catch(function (error) {
+            console.log("Erro ao buscar usuários:", error);
+            alert("Não foi possível fazer o login. Verifique seus dados e tente novamente.");
+          });
+      })
+      .catch((error) => {
+        console.log("Erro ao fazer login:", error);
+        alert("Não foi possível fazer o login. Verifique seus dados e tente novamente.");
+      });
+  }
+  
+  
 
     return(
         <>
@@ -65,7 +91,9 @@ const schema = yup.object({
 
 
             <div className="formulariologin">
-              <form onSubmit={(e) => handleSubmit(e, getValues())} >
+            <form onSubmit={handleSubmit(handleLogin)}>
+
+              {/* <form onSubmit={(e) => handleSubmit(e, getValues())} > */}
                 <div className='titulologin'>
                     <h2>Login</h2>
                 </div>

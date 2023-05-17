@@ -55,8 +55,6 @@ export default function CriarConta2() {
     //retorna os dados em JSON
       .then(function (response) {
         alert("Cadastro realizado com sucesso!");
-        // Link.push("/login");
-        // return response.json();
       })
       //o que é retornado em JSON é armazenado em dadosUsuario e exibido no console do navegador
       .catch(function (error) {

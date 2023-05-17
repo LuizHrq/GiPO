@@ -5,12 +5,13 @@ import './Inicialuser.css'
 import Footer from "../Footer/Footer";
 
 export default function Inicialuser(){
+    const nomeUsuario = localStorage.getItem("nomeUsuario");
     return(
         <>
             <Header/>
             <div className="blocosuperior">
                 <div className="boasvindas">
-                    <h2>Seja bem vindo, Luiz! <br>
+                    <h2>Seja bem vindo, {nomeUsuario}!<br>
                     </br>Vamos iniciar sua jornada?</h2>
                 </div>
                 <img id="gipopersona" src="./img/3d_Gipo_man.png" alt="imagem persona"></img>
