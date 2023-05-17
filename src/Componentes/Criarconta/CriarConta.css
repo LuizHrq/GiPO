@@ -96,7 +96,17 @@
 .formulario label{
     margin-top: 10px;
 }
-
+.input-with-icon{
+    position: relative;
+  }
+.mostra-password{
+    position: absolute;
+    top: 55%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color:#505050
+}
 @media (max-width:600px) {
     .containerCadastro{
         width: auto;
@@ -147,5 +157,8 @@
         font-weight: 500;
         width: 100%;
         margin-left: 20px;
+    }
+    .mostra-password{
+        right: 30px;
     }
 }

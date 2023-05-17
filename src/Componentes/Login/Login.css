@@ -74,7 +74,17 @@
     height: 15px;
     margin: 0;
 }
-
+.input-with-icon-login{
+    position: relative;
+  }
+.mostra-password-login{
+    position: absolute;
+    top: 32%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color:#505050
+}
 
 @media (max-width:400px) {
     .formulariologin{
@@ -125,5 +135,9 @@
         width: 15px;
         height: 15px;
         margin-left: 20px;
+    }
+
+    .mostra-password-login{
+        right: 30px;
     }
 }

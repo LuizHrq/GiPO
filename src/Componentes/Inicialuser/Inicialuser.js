@@ -11,7 +11,7 @@ export default function Inicialuser(){
             <Header/>
             <div className="blocosuperior">
                 <div className="boasvindas">
-                    <h2>Seja bem vindo, {nomeUsuario}!<br>
+                    <h2>Olá, {nomeUsuario}!<br>
                     </br>Vamos iniciar sua jornada?</h2>
                 </div>
                 <img id="gipopersona" src="./img/3d_Gipo_man.png" alt="imagem persona"></img>

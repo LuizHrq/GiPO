@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { FiEye, FiEyeOff } from 'react-icons/fi';
 import * as yup from "yup";
 import './Login.css';
 import HeaderLogin from '../HeaderLogin/HeaderLogin';
@@ -11,6 +13,8 @@ const schema = yup.object({
 });
 
 export default function Login() {
+
+  //variaveis para o form
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(schema),
     defaultValues: {
@@ -19,19 +23,17 @@ export default function Login() {
     },
   });
 
-  //aparecer placeholder no input de email apenas ao clicar
-  // const [showPlaceholder, setShowPlaceholder] = useState(false);
-  // const handleFocus = () => {
-  //   setShowPlaceholder(true);
-  // };
-  // const handleBlur = (event) => {
-  //   if (event.target.value === "") {
-  //     setShowPlaceholder(false);
-  //   }
-  // };
+  //variaveis para mostrar a senha
+  const [showPassword, setShowPassword] = useState(false);
 
+  //Função para mostrar a senha
+  const mostraSenha = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
+  };
+
+
+  //Função para fazer o login
   function handleLogin(dadosUsuario) {
-    // VALIDAR DADOS
     schema
       .validate(dadosUsuario)
       .then(() => {
@@ -82,7 +84,6 @@ export default function Login() {
       });
   }
   
-  
 
     return(
         <>
@@ -93,22 +94,26 @@ export default function Login() {
             <div className="formulariologin">
             <form onSubmit={handleSubmit(handleLogin)}>
 
-              {/* <form onSubmit={(e) => handleSubmit(e, getValues())} > */}
                 <div className='titulologin'>
                     <h2>Login</h2>
                 </div>
                 
                 <label>E-Mail:<br/>
-                    <input type="text"  {...register("email")} name = "email" />
+                    <input type="text"  {...register("email")} name = "email" autoComplete="email" />
                     <span>{errors.email?.message}</span>
                     <br/>
                 </label>
 
 
                 <label>Senha:<br/>
-                    <input type="password"  {...register("senha")} name = "senha"/>
-                    <span>{errors.senha?.message}</span>
+                <div className="input-with-icon-login">
+                    <input type={showPassword ? "text" : "password"}  {...register("senha")} name = "senha" autoComplete="current-password"/>
+                    <div className="mostra-password-login" onClick={mostraSenha}>
+                      {showPassword ? <FiEyeOff /> : <FiEye />}
+                    </div>
+                      <span>{errors.senha?.message}</span>
                     <br/>
+                  </div>
                 </label>
 
                 <div className='checkbox'>

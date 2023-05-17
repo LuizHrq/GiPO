@@ -4,6 +4,8 @@ import { useState } from "react";
 import InputMask from "react-input-mask";
 import * as yup from "yup";
 import './CriarConta.css';
+import { FiEye, FiEyeOff } from 'react-icons/fi';
+
 
 const schema = yup.object({
   nome: yup.string().required("O campo nome é obrigatório!"),
@@ -25,8 +27,10 @@ export default function CriarConta2() {
     },
   });
 
-  //aparecer placeholder no input de email apenas ao clicar
   const [showPlaceholder, setShowPlaceholder] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  
+  //aparecer placeholder no input de email apenas ao clicar
   const handleFocus = () => {
     setShowPlaceholder(true);
   };
@@ -34,6 +38,10 @@ export default function CriarConta2() {
     if (event.target.value === "") {
       setShowPlaceholder(false);
     }
+  };
+
+  const mostraSenha = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
   };
 
   function Cadastro(dadosUsuario) {
@@ -87,13 +95,23 @@ export default function CriarConta2() {
           <br></br>
 
           <label htmlFor="senha">Senha:</label>
-          <input type="password" id="senha" {...register("senha")} />
-          {errors.senha && <span>{errors.senha.message}</span>}
+          <div className="input-with-icon">
+            <input type={showPassword ? "text" : "password"} id="senha" {...register("senha")} />
+              <div className="mostra-password" onClick={mostraSenha}>
+                {showPassword ? <FiEyeOff /> : <FiEye />}
+              </div>
+            {errors.senha && <span>{errors.senha.message}</span>}
+          </div>
           <br></br>
 
           <label htmlFor="confirmaSenha">Confirmar Senha:</label>
-          <input type="password" id="confirmaSenha" {...register("confirmaSenha")} />
-          {errors.confirmaSenha && <span>{errors.confirmaSenha.message}</span>}
+          <div className="input-with-icon">
+            <input type={showPassword ? "text" : "password"} id="confirmaSenha" {...register("confirmaSenha")} />
+              <div className="mostra-password" onClick={mostraSenha}>
+                {showPassword ? <FiEyeOff /> : <FiEye />}
+              </div>
+            {errors.confirmaSenha && <span>{errors.confirmaSenha.message}</span>}
+          </div>
           
           <div className="button">
             <button type="submit" className="botaocriar">Cadastrar</button>

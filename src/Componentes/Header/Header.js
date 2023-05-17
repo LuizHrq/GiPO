@@ -9,6 +9,14 @@ export default function Header() {
     setShowMenu(!showMenu);
   }
 
+  function Disconect(){
+    const confirmDisconnect = window.confirm("Tem certeza de que deseja desconectar?");
+    if (confirmDisconnect) {
+      localStorage.clear();
+      window.location.href = "/";
+    }
+  }
+
   return (
     <header>
       <Link to={"/user"}><img id="logo" src="./img/logogipo1.png" alt="imagem logo"></img></Link>
@@ -21,7 +29,7 @@ export default function Header() {
       <ul className={`menu ${showMenu ? 'show' : ''}`}>
         <li><Link to={"/user"}>Fases</Link></li>
         <li><Link to={"/quemsomos"}>Quem somos</Link></li>
-        <li><Link to={"/"}>Desconectar</Link></li>
+        <li><Link to={"/"} onClick={Disconect}>Desconectar</Link></li>
       </ul>
     </header>
   );
