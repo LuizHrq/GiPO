@@ -1,4 +1,51 @@
-.fases{
+.container-inicial-user{
+    display: flex;
+    width: 950px;
+    height: 500px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 30px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius:  10px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.container-boasvindas{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin:0;
+}
+
+.container-boasvindas h2{
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.container-persona{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#gipopersona{
+    display: flex;
+    width: 400px;
+    height: 500px; 
+}
+
+.container-instrucao{
     display: flex;
     width: 100%;
     height: 100px;
@@ -9,71 +56,43 @@
     margin-left: auto;
     margin-right: auto;
 }
-.fases h2{
-    text-decoration: none;
+.container-instrucao h2{
     width: auto;
     height: auto;
-    font-size: 14px;
+    font-size: 15px;
     margin: auto;
     color: #10222e;
     text-align: center;
+    font-weight: 600;
 }
-
-.blocosuperior{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 80%;
-    height: auto;
-    padding: 30px;
-    margin: 30px auto;
-    background-color: rgb(255, 255, 255);
-    border-radius:  10px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
-}
-
-.boasvindas{
-    display: flex;
-    width: 60%;
-    height: 400px;
-    margin-right: auto;
-    margin-top: 30px;
-    justify-content: center;
-}
-
-.boasvindas h2{
-    text-align: center;
-    justify-content: center;
-}
-
-#gipopersona{
-    display: flex;
-    width: 400px;
-    height: 500px;
-    float: right;
-    margin-right: 50px;  
-}
-
-
 
 @media (min-width: 315px) {
-    .blocosuperior{
-        width: 75%;
+    .container-inicial-user{
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 50px;
     }
-    .boasvindas{
-        display: flex;
+    
+    .container-boasvindas{
         width: 100%;
-        height: 90px;
-        margin-top: 0px;
+        height: 30%;
+        flex-direction: column;
     }
-
-    .boasvindas h2{
+    
+    .container-boasvindas h2{
         text-align: center;
         justify-content: center;
-        font-size: 18px;
-        margin-bottom:0 ;
+        font-size: 16px;
+    }
+    
+    .container-persona{
+        display: flex;
+        width: 100%;
+        height: 30%;
+        flex-direction: column;
+        margin-top: 15px
     }
     #gipopersona{
         width: 270px;
@@ -81,106 +100,200 @@
         margin-right: auto;
         margin-left: auto;
     }
+    
+    .container-instrucao{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: #FFF5D0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-instrucao h2{
+        width: auto;
+        height: auto;
+        font-size: 15px;
+        margin: auto;
+        color: #10222e;
+        text-align: center;
+    }
 }
 
 @media (min-width: 400px) {
-    #gipopersona{
-        display: flex;
-        width: 330px;
-        height: 400px;
-        float: right;
-        margin-right: auto;
-        margin-left: auto;
+    .container-inicial-user{
+        width: 75%;
+        margin-bottom: 50px;
     }
-    .fases h2{
-        font-size: 16px;
-        text-align: center;
-        padding: 30px;
+    
+    .container-instrucao{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        background-color: #FFF5D0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container-instrucao h2{
+        width: 80%;
     }
 }
 
 @media (min-width: 600px) {
-    .boasvindas{
-        display: flex;
-        width: 100%;
-        height: 100px;
-        margin-right: auto;
-        margin-top: 30px;
-        justify-content: center;
+    .container-inicial-user{
+        width: 80%;
+        flex-direction: column;
     }
     
-    .boasvindas h2{
-        text-align: center;
-        justify-content: center;
+    .container-boasvindas h2{
+        font-size: 17px;
+    }
+    
+    .container-persona{
+        display: flex;
+        width: 100%;
+        height: 30%;
+        flex-direction: column;
+        margin-top: 15px
     }
     #gipopersona{
-        display: flex;
-        width: 330px;
-        height: 400px;
-        float: right;
+        width: 290px;
+        height: 380px;
         margin-right: auto;
         margin-left: auto;
     }
 }
+
 @media (min-width: 768px) {
-    .boasvindas{
-        display: flex;
-        width: 100%;
-        height: 100px;
-        margin-right: auto;
-        margin-top: 30px;
-        justify-content: center;
+    .container-inicial-user{
+        width: 80%;
+        height: auto;
+        flex-flow: row wrap;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
     
-    .boasvindas h2{
+    .container-boasvindas{
+        width: 50%;
+        height: 100%;
+        flex-direction:row;
+    }
+    
+    .container-boasvindas h2{
         text-align: center;
         justify-content: center;
-        height: auto;
+        font-size: 18px;
+    }
+    
+    .container-persona{
+        width: 50%;
+        height: 100%;
+        flex-direction:row;
+        margin-top: 0;
     }
     #gipopersona{
-        display: flex;
-        width: 350px;
-        height: 420px;
-        float: right;
+        width: 270px;
+        height: 340px;
         margin-right: auto;
         margin-left: auto;
     }
-    .fases h2{
-        font-size: 18px;
-        text-align: center;
-        padding: 40px;
+    .container-instrucao h2{
+        font-size: 16px;
     }
 }
 
 @media (min-width: 992px) {
-    .boasvindas{
-        width: 40%;
-        height: 500px;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-    }
-    
-    .boasvindas h2{
-        font-size: 30px;
-        margin: auto;
-        text-align: center;
-    }
-    
-    #gipopersona{
-        display: flex;
-        width: 400px;
-        height: 500px;
-        margin-right: 10px;  
-    }
-    .fases{
-        height: 120px;
-        margin-top: 50px;
+    .container-inicial-user{
+        width: 800px;
+        padding: 20px;
         margin-bottom: 50px;
+        margin-top: 50px;
     }
-    .fases h2{
-        font-size: 19px;
-        margin: auto;
+    
+    .container-boasvindas{
+        width: 350px;
+        height: 100%;
+        flex-direction:row;
     }
-}
+    
+    .container-boasvindas h2{
+        text-align: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    
+    .container-persona{
+        width: 350px;
+        height: 100%;
+        flex-direction:row;
+        margin-top:0;
+    }
+    #gipopersona{
+        width: 270px;
+        height: 340px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container-instrucao h2{
+        font-size: 16px;
+    }
+} 
+@media (min-width: 1000px) {
+    .container-inicial-user{
+        width: 700px;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    #gipopersona{
+        width: 290px;
+        height: 360px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container-instrucao h2{
+        font-size: 16px;
+    }
+} 
+@media (min-width: 1280px) {
+    .container-inicial-user{
+        width: 1000px;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
+    .container-boasvindas{
+        width: 500px;
+        height: 100%;
+        flex-direction:row;
+    }
+    
+    .container-boasvindas h2{
+        text-align: center;
+        justify-content: center;
+        font-size: 22px;
+    }
+    
+    .container-persona{
+        width: 500px;
+        height: 100%;
+        flex-direction:row;
+        margin-top:0;
+    }
+    #gipopersona{
+        width: 330px;
+        height: 410px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container-instrucao h2{
+        font-size: 16px;
+    }
+} 

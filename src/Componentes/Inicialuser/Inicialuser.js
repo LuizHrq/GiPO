@@ -9,14 +9,18 @@ export default function Inicialuser(){
     return(
         <>
             <Header/>
-            <div className="blocosuperior">
-                <div className="boasvindas">
+            <div className="container-inicial-user">
+                <div className="container-boasvindas">
                     <h2>Olá, {nomeUsuario}!<br>
                     </br>Vamos iniciar sua jornada?</h2>
                 </div>
-                <img id="gipopersona" src="./img/3d_Gipo_man.png" alt="imagem persona"></img>
+
+                <div className="container-persona">
+                    <img id="gipopersona" src="./img/3d_Gipo_man.png" alt="imagem persona"></img>
+                </div>
             </div>
-            <div className="fases">
+
+            <div className="container-instrucao">
                 <h2>Aqui você poderá iniciar sua jornada de conhecimento sobre IPO!</h2>
             </div>
             

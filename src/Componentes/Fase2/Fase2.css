@@ -1,4 +1,4 @@
-.titlefase1{
+/* .titlefase2{
     display: flex;
     color:#013750;
     margin-top: 50px;
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 315px) {
-  .titlefase1{
+  .titlefase2{
     font-size: 25px;
 }
   .video-container {
@@ -53,6 +53,6 @@
     height: 90%;
   }
 }
-
+ */
 
   

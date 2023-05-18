@@ -4,7 +4,7 @@ import './ConteudoFase1.css';
 export default function Conteudo1(){
     return(
         <>
-            <div className="container1">
+            <div className="container1-fase1">
                 <div className="texto1">
                     <h1>O QUE É UM IPO?</h1>
                     <p>IPO é uma sigla utilizada para se referir ao termo em inglês: Initial Public Offering, que em português significa “Oferta
@@ -22,7 +22,7 @@ export default function Conteudo1(){
             </div>
 
 
-            <div className="container2">
+            <div className="container2-fase1">
                 <div className="texto2">
                     <h1>JORNADA DA COMPANHIA DURANTE O IPO</h1>
                     <p>O processo de IPO consiste em etapas complexas, rígidas e regulamentadas pela Comissão de Valores Mobiliários

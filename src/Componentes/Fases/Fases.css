@@ -22,7 +22,7 @@
     background-color: #FFF5D0;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-radius: 0 30px 30px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 .fase1 h2,
@@ -39,6 +39,7 @@
     margin-top: auto;
     margin-bottom: auto;
     color: #BF712C;
+    font-weight: 600;
 }
 
 .fase2,
@@ -50,7 +51,7 @@
     margin-left: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-radius: 30px 0 0 30px;
+    border-radius: 10px 0 0 10px;
     position: relative; /*alinha h2 para direita*/
 
 }
@@ -70,6 +71,7 @@
     color: #BF712C;
     position: absolute; /*alinha para direita*/
     right: 0; 
+    font-weight: 600;
 }
 
 @media (max-width:600px) {
@@ -81,14 +83,14 @@
     .fase1,
     .fase3,
     .fase5 {
-        width: 60%;
+        width: 50%;
         height: 110px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
     .fase2,
     .fase4 {
-        width: 60%;
+        width: 50%;
         height: 110px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -107,22 +109,22 @@
 }
 @media (min-width:600px) {
     .blocos{
-        width: 85%;
+        width: 70%;
         padding-top: 15px;
         padding-bottom: 15px;
     }
     .fase1,
     .fase3,
     .fase5 {
-        width: 55%;
-        height: 120px;
+        width: 48%;
+        height: 110px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
     .fase2,
     .fase4 {
-        width: 55%;
-        height: 120px;
+        width: 48%;
+        height: 110px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -147,15 +149,15 @@
     .fase1,
     .fase3,
     .fase5 {
-        width: 55%;
-        height: 120px;
+        width: 45%;
+        height: 100px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
     .fase2,
     .fase4 {
-        width: 55%;
-        height: 120px;
+        width: 45%;
+        height: 100px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -180,15 +182,15 @@
     .fase1,
     .fase3,
     .fase5 {
-        width: 50%;
-        height: 120px;
+        width: 45%;
+        height: 100px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
     .fase2,
     .fase4 {
-        width: 50%;
-        height: 120px;
+        width: 45%;
+        height: 100px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -206,22 +208,22 @@
 }
 @media (min-width:1025px) {
     .blocos{
-        width: 75%;
+        width: 600px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
     .fase1,
     .fase3,
     .fase5 {
-        width: 50%;
-        height: 130px;
+        width: 45%;
+        height: 110px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
     .fase2,
     .fase4 {
-        width: 50%;
-        height: 130px;
+        width: 45%;
+        height: 110px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -237,9 +239,9 @@
         margin-right: 50px;
     }
 }
-@media (min-width: 1440px){
+@media (min-width: 1280px){
     .blocos{
-        width: 1000px;
+        width: 800px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -247,14 +249,14 @@
     .fase3,
     .fase5 {
         width: 45%;
-        height: 130px;
+        height: 110px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
     .fase2,
     .fase4 {
         width: 45%;
-        height: 130px;
+        height: 110px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
