@@ -11,14 +11,14 @@
     background-color: #fafafa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .cabecalhoteste{
     display: inherit;
     background-color: #FFF5D0;
     width: 100%;
-    border-radius: 30px 30px 0 0;
+    border-radius: 10px 10px 0 0;
     height: 100px;
     justify-content: center;
     align-items: center;
@@ -97,6 +97,28 @@
     color: #fff;
 }
 
+.proxima-fase{
+    display: flex;
+    width: 650px;
+    justify-content: right;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+.proxima-fase button{
+    margin-top: -30px;
+    margin-left: auto;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    color: #0077cc;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 500;
+}
+
 @media (max-width: 400px) {
     .containerquiz {
         width: 80%;
@@ -138,6 +160,24 @@
         margin-top: 0;
         margin-bottom: 25px;
     }
+    .proxima-fase{
+        display: flex;
+        width: 80%;
+    }
+    .proxima-fase button{
+        margin-top: -30px;
+        margin-left: auto;
+        padding: 10px 20px;
+        background-color: #fafafa;
+        color: #0077cc;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        font-weight: 500;
+    }
 }
 @media (min-width: 400px) {
     .containerquiz {
@@ -158,7 +198,6 @@
         font-size: 15px;
     }
     .formularioquiz button[type="submit"] {
-        margin-top: -15px;
         padding: 10px 20px;
     }
     .quiz-result {
@@ -180,18 +219,56 @@
         margin-top: 0;
         margin-bottom: 25px;
     }
+    .proxima-fase{
+        display: flex;
+        width: 80%;
+    }
+    .proxima-fase button{
+        margin-top: -30px;
+        margin-left: auto;
+        padding: 10px 20px;
+        background-color: #fafafa;
+        color: #0077cc;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        font-weight: 500;
+    }
 
 }
-
 @media (min-width: 768px) {
     .containerquiz {
-        width: 70%;
+        width: 500px;
+    }
+    .formularioquiz button[type="submit"] {
+        margin-top: 10px;
+    }
+    .proxima-fase{
+        display: flex;
+        width: 500px;
+    }
+    .proxima-fase button{
+        margin-top: -30px;
+        margin-left: auto;
+        padding: 10px 20px;
+        background-color: #fafafa;
+        color: #0077cc;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        font-weight: 500;
     }
 
 } 
 @media (min-width: 1000px) {
     .containerquiz {
-        width: 65%;
+        width: 650px;
         min-height:420px;
     }
     .cabecalhoteste h1{
@@ -215,10 +292,47 @@
     .quiz-result.incorrect {
         font-size: 15px;
     }
+    .proxima-fase{
+        display: flex;
+        width: 650px;
+    }
+    .proxima-fase button{
+        margin-top: -30px;
+        margin-left: auto;
+        padding: 10px 20px;
+        background-color: #fafafa;
+        color: #0077cc;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        font-weight: 500;
+    }
+
 
 } 
 @media (min-width: 1200px) {
     .containerquiz {
-        width: 55%;
+        width: 650px;
+    }
+    .proxima-fase{
+        display: flex;
+        width: 650px;
+    }
+    .proxima-fase button{
+        margin-top: -30px;
+        margin-left: auto;
+        padding: 10px 20px;
+        background-color: #fafafa;
+        color: #0077cc;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        font-weight: 500;
     }
 }
