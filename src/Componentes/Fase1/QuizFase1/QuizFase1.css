@@ -1,6 +1,6 @@
 .containerquiz {
     display: flex;
-    width: 50%;
+    width: 60%;
     min-height:420px;
     flex-direction: column;
     align-items: center;
@@ -30,16 +30,14 @@
     color: #BF712C;
 }
 .containerquiz h2{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin:15px;
     font-size: 18px;
     text-align: center;
     font-weight: 500;
     color: #10222e;
 }
 .containerquiz p{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin:10px 15px;
     font-size: 22px;
     text-align: center;
     font-weight: 500;
@@ -100,23 +98,48 @@
 .quiz-result.correct {
     background-color: #86da32;
     color: #fff;
+    border-radius: 2px;
 }
+
 
 .quiz-result.incorrect {
     background-color: #ff6347;
     color: #fff;
+    border-radius: 2px;
+}
+.quiz-result-final{
+    display: fixed;
+    width: 100%;
+    padding: 10px auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    background-color: #FFD700;
+    color: #fff;
+    border-radius: 0;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+}
+.quiz-result-final p{
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+}
+.icon-trophy{
+    margin: 5px 15px;
+    height:auto;
+    color: #fff;
+    justify-content: center;
 }
 
-.proxima-fase{
+.containebotoes{
     display: flex;
     width: 650px;
-    justify-content: right;
-    align-items: center;
-    margin: 0 auto 20px auto;
+    height: 60px;
+    margin: -40px auto 20px auto;
 }
-.proxima-fase button{
-    margin-top: -30px;
-    margin-left: auto;
+.containebotoes button{
     padding: 10px 20px;
     background-color: #fafafa;
     color: #0077cc;
@@ -128,11 +151,16 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     font-weight: 500;
 }
+.containebotoes #proxima-fase, #proxima-questao{
+    margin-left: auto;
+}
+
 
 @media (max-width: 400px) {
     .containerquiz {
-        width: 80%;
+        width: 90%;
         min-height:420px;
+        padding: 0;
     }
     .containerquiz h2{
         margin-top: 15px;
@@ -150,8 +178,11 @@
         font-weight: 600;
         color: #10222e;
     }
+    .cabecalhoteste{
+        padding: 0;
+    }
     .cabecalhoteste h1{
-        font-size: 24px;
+        font-size: 22px;
         text-align: center;
     }
     .containerquiz p{
@@ -170,7 +201,7 @@
     .quiz-result {
         font-size: 16px;
         text-align: center;
-        padding: 10px 30px;
+        padding: 10px 10px;
         border-radius: 5px;
     }
     
@@ -182,10 +213,23 @@
     }
     
     .quiz-result.incorrect {
-        width: 130px;
+        width: 200px;
         font-size: 15px;
         margin-top: 0;
         margin-bottom: 25px;
+        padding: 10px 3px;
+    }
+    .quiz-result-final {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+    .quiz-result-final p{
+        font-size: 14px;
+    }
+    .icon-trophy{
+        display: none;
     }
     .proxima-fase{
         display: flex;
@@ -208,8 +252,9 @@
 }
 @media (min-width: 400px) {
     .containerquiz {
-        width: 80%;
+        width: 85%;
         min-height:420px;
+        padding: 0;
     }
     .containerquiz h2{
         margin-top: 15px;
@@ -226,6 +271,9 @@
         text-align: center;
         font-weight: 600;
         color: #10222e;
+    }
+    .cabecalhoteste{
+        padding: 0;
     }
     .cabecalhoteste h1{
         font-size: 25px;
@@ -254,10 +302,27 @@
     }
     
     .quiz-result.incorrect {
-        width: 130px;
+        width: 260px;
         font-size: 15px;
         margin-top: 0;
         margin-bottom: 25px;
+        padding: 10px 8px;
+    }
+    .quiz-result-final {
+        display: flex;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+    .quiz-result-final p{
+        font-size: 15px;
+        height: 100%;
+        color: #fff;
+    }
+    .icon-trophy{
+        margin: 11px -8px;
+        height:20px;
+        color: #fff;
     }
     .proxima-fase{
         display: flex;
@@ -314,6 +379,19 @@
         font-size: 15px;
         margin-top: 0;
         margin-bottom: 25px;
+    }
+    .quiz-result-final {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+    .quiz-result-final p{
+        font-size: 17px;
+        color: #fff;
+    }
+    .icon-trophy{
+        margin: 11.5px -3px;
+        height:22.5px;
+        color: #fff;
     }
     .proxima-fase{
         display: flex;
@@ -373,6 +451,20 @@
     .quiz-result.incorrect {
         font-size: 15px;
     }
+    .quiz-result-final {
+        padding: 12px 0;
+        font-size: 18px;
+    }
+    .quiz-result-final p{
+        font-size: 19px;
+        color: #fff;
+    }
+    .icon-trophy{
+        margin: 11px 0px;
+        height:25px;
+        color: #fff;
+    }
+    
     .proxima-fase{
         display: flex;
         width: 650px;
@@ -397,6 +489,11 @@
 @media (min-width: 1200px) {
     .containerquiz {
         width: 650px;
+    }
+    .icon-trophy{
+        margin: 12.8px 0px;
+        height:25px;
+        color: #fff;
     }
     .proxima-fase{
         display: flex;

@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import './QuizFase1.css';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaTrophy, FaSyncAlt} from 'react-icons/fa';
 
 export default function QuizFase1() {
   const [questaoIndex, setquestaoIndex] = useState(0);
   const [answer, setAnswer] = useState('');
   const [isCorrect, setIsCorrect] = useState(false);
   const [showResult, setShowResult] = useState(false);
+  const [showCongratulations, setShowCongratulations] = useState(false);
+  const [restartQuiz, setRestartQuiz] = useState(false);
+  const [answeredQuestion, setAnsweredQuestion] = useState(false);
 
   const questoes = [
     {
@@ -51,6 +54,15 @@ export default function QuizFase1() {
     }
   ];
 
+  const handleRestartQuiz = () => {
+    setRestartQuiz(true);
+    setquestaoIndex(0);
+    setShowResult(false);
+    setShowCongratulations(false);
+    setAnswer('');
+    setAnsweredQuestion(false);
+  };
+
   const currentQuestion = questoes[questaoIndex];
 
   const handleAnswerChange = (e) => {
@@ -61,17 +73,39 @@ export default function QuizFase1() {
     e.preventDefault();
     if (answer === currentQuestion.resposta) {
       setIsCorrect(true);
+      if (questaoIndex === questoes.length - 1) {
+        setShowCongratulations(true);
+      }else {
+        setShowCongratulations(false);
+      }
     } else {
       setIsCorrect(false);
+      setShowCongratulations(false);
     }
     setShowResult(true);
+    setAnsweredQuestion(true);
   };
 
+  // const nextQuestion = () => {
+  //   setquestaoIndex(questaoIndex + 1);
+  //   setAnswer('');
+  //   setIsCorrect(false);
+  //   setShowResult(false);
+  // };
+
   const nextQuestion = () => {
-    setquestaoIndex(questaoIndex + 1);
-    setAnswer('');
-    setIsCorrect(false);
-    setShowResult(false);
+    if (restartQuiz) {
+      setRestartQuiz(false);
+      setquestaoIndex(0);
+      setShowResult(false);
+      setShowCongratulations(false);
+      setAnswer('');
+    } else {
+      setquestaoIndex(questaoIndex + 1);
+      setAnswer('');
+      setIsCorrect(false);
+      setShowResult(false);
+    }
   };
 
   const goToNextPhase = () => {
@@ -130,23 +164,39 @@ export default function QuizFase1() {
             </form>
             {showResult && isCorrect && (<p className="quiz-result correct">Parabéns, sua resposta está correta!</p>)}
             {showResult && !isCorrect && (<p className="quiz-result incorrect">Resposta incorreta, Tente novamente.</p>)}
+
+            {showCongratulations && (<div className="quiz-result-final">
+              <FaTrophy className="icon-trophy"/>
+              <p>Você concluiu essa fase com sucesso!</p>
+              <FaTrophy className="icon-trophy"/></div>)}
+
         </div>
 
-        {showResult && (<div className="proxima-fase">
-            {isCorrect && questaoIndex < questoes.length - 1 ? (
-                <button onClick={nextQuestion}>
-                <FaArrowRight />
-                <br />
-                <span>Próxima pergunta</span>
-                </button>
-            ) : isCorrect && questaoIndex === questoes.length - 1 ? (
-                <button onClick={goToNextPhase}>
-                <FaArrowRight />
-                <br />
-                <span>Próxima fase</span>
-                </button>
-            ) : null}
-            </div>
-        )}
+        <div className="containebotoes">
+
+          {showResult && answeredQuestion && (
+              <button id="reiniciar" onClick={handleRestartQuiz}>
+              <FaSyncAlt/><br/>
+              <span>Reiniciar</span>
+              </button>)}
+
+          {/*MOSTRE OS BOTÕES PROX QUESTAO*/}
+          {showResult && isCorrect && questaoIndex < questoes.length - 1 && (
+            <button id="proxima-questao" onClick={nextQuestion}>
+              <FaArrowRight /><br/>
+              <span>Próxima pergunta</span>
+            </button>
+          )}
+
+          {/*MOSTRE O BOTão PROX FASE*/}
+          {showResult && isCorrect && questaoIndex === questoes.length - 1 && (
+            <button id="proxima-fase" onClick={goToNextPhase}>
+              <FaArrowRight />
+              <br />
+              <span>Próxima fase</span>
+            </button>
+          )}
+
+        </div>
     </>
 );}
