@@ -133,13 +133,13 @@
     justify-content: center;
 }
 
-.containebotoes{
+.containerbotoes{
     display: flex;
     width: 650px;
     height: 60px;
     margin: -40px auto 20px auto;
 }
-.containebotoes button{
+.containerbotoes button{
     padding: 10px 20px;
     background-color: #fafafa;
     color: #0077cc;
@@ -151,7 +151,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     font-weight: 500;
 }
-.containebotoes #proxima-fase, #proxima-questao{
+.containerbotoes #proxima-fase, #proxima-questao{
     margin-left: auto;
 }
 
@@ -231,23 +231,14 @@
     .icon-trophy{
         display: none;
     }
-    .proxima-fase{
-        display: flex;
-        width: 80%;
+    .containerbotoes{
+        width: 90%;
+        height: 60px;
+        margin: -40px auto 20px auto;
     }
-    .proxima-fase button{
-        margin-top: -30px;
-        margin-left: auto;
-        padding: 10px 20px;
-        background-color: #fafafa;
-        color: #0077cc;
-        font-size: 14px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        font-weight: 500;
+    .containerbotoes button{
+        padding: 0 10px;
+        font-size: 13px;
     }
 }
 @media (min-width: 400px) {
@@ -324,23 +315,12 @@
         height:20px;
         color: #fff;
     }
-    .proxima-fase{
-        display: flex;
-        width: 80%;
+    .containerbotoes{
+        width: 85%;
     }
-    .proxima-fase button{
-        margin-top: -30px;
-        margin-left: auto;
-        padding: 10px 20px;
-        background-color: #fafafa;
-        color: #0077cc;
+    .containerbotoes button{
+        padding: 5px 10px;
         font-size: 14px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        font-weight: 500;
     }
 
 }
@@ -393,23 +373,12 @@
         height:22.5px;
         color: #fff;
     }
-    .proxima-fase{
-        display: flex;
+    .containerbotoes{
         width: 500px;
     }
-    .proxima-fase button{
-        margin-top: -30px;
-        margin-left: auto;
-        padding: 10px 20px;
-        background-color: #fafafa;
-        color: #0077cc;
-        font-size: 14px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        font-weight: 500;
+    .containerbotoes button{
+        padding: 10px 10px;
+        font-size: 15px;
     }
 
 } 
@@ -464,24 +433,12 @@
         height:25px;
         color: #fff;
     }
-    
-    .proxima-fase{
-        display: flex;
+    .containerbotoes{
         width: 650px;
     }
-    .proxima-fase button{
-        margin-top: -30px;
-        margin-left: auto;
-        padding: 10px 20px;
-        background-color: #fafafa;
-        color: #0077cc;
-        font-size: 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        font-weight: 500;
+    .containerbotoes button{
+        padding: 10px 13px;
+        font-size: 15.5px;
     }
 
 
@@ -495,22 +452,11 @@
         height:25px;
         color: #fff;
     }
-    .proxima-fase{
-        display: flex;
+    .containerbotoes{
         width: 650px;
     }
-    .proxima-fase button{
-        margin-top: -30px;
-        margin-left: auto;
-        padding: 10px 20px;
-        background-color: #fafafa;
-        color: #0077cc;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        font-weight: 500;
+    .containerbotoes button{
+        padding: 10px 13px;
+        font-size: 15.5px;
     }
 }

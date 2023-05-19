@@ -172,7 +172,7 @@ export default function QuizFase1() {
 
         </div>
 
-        <div className="containebotoes">
+        <div className="containerbotoes">
 
           {showResult && answeredQuestion && (
               <button id="reiniciar" onClick={handleRestartQuiz}>
