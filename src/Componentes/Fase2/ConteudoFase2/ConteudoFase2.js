@@ -1,42 +1,35 @@
 import React from "react";
 import './ConteudoFase2.css';
 
-export default function Conteudo2(){
+export default function ConteudoFase2(){
     return(
         <>
-            <div className="container1Fase2">
+            <div className="container1-fase2">
                 <div className="texto1">
                     <h1>PLANEJAMENTO E AUDITORIA</h1>
-                    <p>O primeiro passo da companhia será iniciar um planejamento.
-                    Este momento de planejamento e preparação da empresa para costuma ser as etapas mais longas do processo.
-                    <br></br>
+                    <p>A partir do momento que uma companhia decide abrir seu capital, ela precisa se preparar para o IPO.
+                        É necessário que a empresa esteja em conformidade com as normas da CVM e que tenha uma boa governança corporativa.
+                        Para isso, é necessário que a companhia faça uma auditoria interna e externa, para que seja possível identificar
+                        possíveis falhas e corrigi-las antes de abrir seu capital.
+                        Nesse momento, a companhia também deve se preparar para a transparência que o IPO exige, pois a partir do momento
+                        que a empresa abrir seu capital, ela deverá divulgar seus resultados trimestralmente ao mercado.
 
-                    Uma das razões que normalmente faz com que o processo  demore é a auditoria das finanças da empresa.
-                    A legislação exige que empresa apresente três anos de balanços auditados.
-                    Se a companhia já tinha por hábito auditar seus resultados – ou seja, submetê-los ao exame minucioso por uma empresa externa
-                    e independente – essa etapa fica mais fácil.
-                    Mas se esse não for o caso, pode ser necessário aguardar o período inteiro se completar para ter os números certos em mãos.
                     </p> 
                 </div>
                     <div className="texto1img">
-                        <img id="negocios" src="./img/img_persona_gipo/negocios.png" alt="imagem negocios"></img>
+                        <img id="imgnegocios" src="./img/img_persona_gipo/negocios.png" alt="img negocios"></img>
                     </div>
             </div>
 
 
-            <div className="container2Fase2">
+            <div className="container2-fase2">
                 <div className="texto2">
-                    <h1>DEFINIÇÃO DOS DETALHES</h1>
-                    <p>
-                    Ainda na fase de planejamento, a companhia e seus assessores financeiros definem todas as características da operação.
-                    Isso abrange desde o volume de recursos que serão captados até a composição das ações que serão
-                    oferecidas ao mercado (se serão emitidos novos papéis ou se os antigos investidores venderão parte dos que possuem) e
-                    a valoração da companhia.
+                    <h1>EXIGÊNCIA DA AUDITORIA</h1>
+                    <p>Ainda sobre o processo de auditoria, a legislação exige que, para abrir o capital, a empresa precisa apresentar 3 anos de balanços auditados.
+                        Se a companhia já tinha por hábito auditar seus resultados, essa etapa fica mais fácil. Caso contrário, pode ser
+                        necessário aguardar o período inteiro de 3 anos se completar para os números certos em mãos e assim, poder abrir o capital.
                     </p>
                 </div>
-            <div className="texto2img">
-                        <img id="imganalise" src="./img/img_persona_gipo/analise.png" alt="imagem analise"></img>
-            </div>
             </div>
         </>
     )

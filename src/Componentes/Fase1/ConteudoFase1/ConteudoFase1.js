@@ -1,7 +1,7 @@
 import React from "react";
 import './ConteudoFase1.css';
 
-export default function Conteudo1(){
+export default function ConteudoFase1(){
     return(
         <>
             <div className="container1-fase1">
