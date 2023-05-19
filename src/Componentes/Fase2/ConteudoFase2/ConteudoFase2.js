@@ -5,7 +5,7 @@ export default function ConteudoFase2(){
     return(
         <>
             <div className="container1-fase2">
-                <div className="texto1">
+                <div className="texto1-fase2">
                     <h1>PLANEJAMENTO E AUDITORIA</h1>
                     <p>A partir do momento que uma companhia decide abrir seu capital, ela precisa se preparar para o IPO.
                         É necessário que a empresa esteja em conformidade com as normas da CVM e que tenha uma boa governança corporativa.
@@ -16,14 +16,14 @@ export default function ConteudoFase2(){
 
                     </p> 
                 </div>
-                    <div className="texto1img">
+                    <div className="texto1img-fase2">
                         <img id="imgnegocios" src="./img/img_persona_gipo/negocios.png" alt="img negocios"></img>
                     </div>
             </div>
 
 
             <div className="container2-fase2">
-                <div className="texto2">
+                <div className="texto2-fase2">
                     <h1>EXIGÊNCIA DA AUDITORIA</h1>
                     <p>Ainda sobre o processo de auditoria, a legislação exige que, para abrir o capital, a empresa precisa apresentar 3 anos de balanços auditados.
                         Se a companhia já tinha por hábito auditar seus resultados, essa etapa fica mais fácil. Caso contrário, pode ser

@@ -11,12 +11,12 @@
 }
 
 
-.texto1{
+.texto1-fase2{
     display: inline-block;
     width: 70%;
     height: auto;
 }
-.texto1 h1{
+.texto1-fase2 h1{
     display: block;
     width: auto;
     height: auto;
@@ -26,7 +26,7 @@
     margin: 10px 0 10px 10px;
 }
 
-.texto1 p{
+.texto1-fase2 p{
     display: block;
     width: auto;
     height: auto;
@@ -67,7 +67,7 @@
 
 }
 
-.texto2 h1{
+.texto2-fase2 h1{
     display: flex;
     width: auto;
     height: auto;
@@ -80,7 +80,7 @@
     margin-bottom: 10px;
 }
 
-.texto2 p{
+.texto2-fase2 p{
     display: block;
     width: auto;
     height: auto;
@@ -88,21 +88,7 @@
     color: #10222e;
     margin: 0;
 }
-.texto2img{
-    display: inline-block;
-    width: 100%;
-    height: 200px;
-    align-items:flex-end;
-}
 
-#imgnegpensando{
-    display: flex;
-    width: 280px;
-    height: 240px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-}
 
 @media (max-width: 768px) {
     .container1-fase2{
@@ -115,27 +101,27 @@
         padding: 30px 30px 0 30px;
     }
     
-    .texto1{
+    .texto1-fase2{
         display: block;
         width: 100%;
         height: auto;
     
     }
-    .texto1 h1{
+    .texto1-fase2 h1{
         width: 100%;
         font-size: 22px;
         text-align: center;
         margin: 0 0 10px 0;
     }
     
-    .texto1 p{
+    .texto1-fase2 p{
         display: flex;
         font-size: 14px;
         text-align: justify;
         margin: 20px 0 0 0;
     }
     
-    .texto1img{
+    .texto1img-fase2{
         display: flex;
         width: 100%;
         height: 200px;
@@ -146,7 +132,7 @@
         height: 150px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0; 
+        margin-top: 20px; 
     }
     
     /*JORNADA DA COMPANHIA DURANTE O IPO*/
@@ -159,19 +145,20 @@
         flex-direction: column;
     }
     
-    .texto2{
+    .texto2-fase2{
         width: 100%;
         height: auto;
         margin-left: 0;
     
     }
-    .texto2 h1{
+    .texto2-fase2 h1{
         width: 100%;
         font-size: 22px;
         margin: 0 0 10px 0;
+        text-align: center;
     }
     
-    .texto2 p{
+    .texto2-fase2 p{
         display: flex;
         font-size: 14px;
         text-align: justify;
@@ -184,22 +171,22 @@
         width: 650px;
         height: 320px;
     } 
-    .texto1{
+    .texto1-fase2{
         display: inline-block;
         width: 400px;
         height: auto;
     }
-    .texto1 h1{
+    .texto1-fase2 h1{
         font-size: 23px;
         margin: 0;
     }
     
-    .texto1 p{
+    .texto1-fase2 p{
         font-size: 15px;
         margin: 10px 0 10px 0;
     }
 
-    .texto1img{
+    .texto1img-fase2{
         display: flex;
         width: 250px;
         height: 300px;
@@ -215,13 +202,13 @@
         width: 650px;
         height: auto;
     }
-    .texto2{
+    .texto2-fase2{
         display: inline-block;
         width: 650px;
         height: auto;
     
     }
-    .texto2 h1{
+    .texto2-fase2 h1{
         display: block;
         width: auto;
         height: auto;
@@ -230,7 +217,7 @@
         text-align: right;
     }
     
-    .texto2 p{
+    .texto2-fase2 p{
         display: block;
         width: auto;
         height: auto;
@@ -245,7 +232,7 @@
         width: 700px;
         height: 320px;
     } 
-    .texto1{
+    .texto1-fase2{
         display: inline-block;
         width: 450px;
         height: auto;
@@ -257,7 +244,7 @@
         height: auto;
         /* margin-right: -30px; */
     }
-    .texto2{
+    .texto2-fase2{
         display: inline-block;
         width:680px;
         height: auto;
@@ -270,14 +257,14 @@
         width: 760px;
         height: 320px;
     } 
-    .texto1{
+    .texto1-fase2{
         display: inline-block;
         width: 400px;
         height: auto;
         margin-left: 100px;
     }
 
-    .texto1img{
+    .texto1img-fase2{
         display: flex;
         width: 250px;
         height: 280px;
@@ -302,24 +289,24 @@
         margin: 0 auto 50px 120px;
         border-radius: 10px;
     } 
-    .texto1{
+    .texto1-fase2{
         display: inline-block;
         width: 400px;
         height: auto;
         margin-left: 0;
         margin-right: 50px;
     }
-    .texto1 h1{
+    .texto1-fase2 h1{
         font-size: 24px;
         margin: 0;
     }
     
-    .texto1 p{
+    .texto1-fase2 p{
         font-size: 16px;
         margin: 10px 0 10px 0;
     }
 
-    .texto1img{
+    .texto1img-fase2{
         display: flex;
         width: 300px;
         height: 350px;
@@ -339,7 +326,7 @@
         border-radius: 10px;
         padding: 30px;
     }
-    .texto2{
+    .texto2-fase2{
         display: inline-block;
         width: 650px;
         height: auto;
@@ -347,7 +334,7 @@
         margin-left: 0;
     
     }
-    .texto2 h1{
+    .texto2-fase2 h1{
         display: block;
         width: auto;
         height: auto;
@@ -356,7 +343,7 @@
         text-align: right;
     }
     
-    .texto2 p{
+    .texto2-fase2 p{
         display: block;
         width: auto;
         height: auto;

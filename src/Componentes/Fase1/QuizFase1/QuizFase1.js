@@ -81,17 +81,11 @@ export default function QuizFase1() {
     } else {
       setIsCorrect(false);
       setShowCongratulations(false);
+      setAnswer('');
     }
     setShowResult(true);
     setAnsweredQuestion(true);
   };
-
-  // const nextQuestion = () => {
-  //   setquestaoIndex(questaoIndex + 1);
-  //   setAnswer('');
-  //   setIsCorrect(false);
-  //   setShowResult(false);
-  // };
 
   const nextQuestion = () => {
     if (restartQuiz) {
@@ -127,8 +121,7 @@ export default function QuizFase1() {
                 type="radio"
                 value="alternativa1"
                 checked={answer === 'alternativa1'}
-                onChange={handleAnswerChange}
-                />
+                onChange={handleAnswerChange}/>
                 {currentQuestion.alternativa1}
             </label>
             <label>
@@ -136,8 +129,7 @@ export default function QuizFase1() {
                 type="radio"
                 value="alternativa2"
                 checked={answer === 'alternativa2'}
-                onChange={handleAnswerChange}
-                />
+                onChange={handleAnswerChange}/>
                 {currentQuestion.alternativa2}
             </label>
             <label>
@@ -145,8 +137,7 @@ export default function QuizFase1() {
                 type="radio"
                 value="alternativa3"
                 checked={answer === 'alternativa3'}
-                onChange={handleAnswerChange}
-                />
+                onChange={handleAnswerChange}/>
                 {currentQuestion.alternativa3}
             </label>
             <label>
@@ -154,8 +145,7 @@ export default function QuizFase1() {
                 type="radio"
                 value="alternativa4"
                 checked={answer === 'alternativa4'}
-                onChange={handleAnswerChange}
-                />
+                onChange={handleAnswerChange}/>
                 {currentQuestion.alternativa4}
             </label>
             <br />

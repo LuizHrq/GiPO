@@ -81,6 +81,7 @@ export default function QuizFase2() {
     } else {
       setIsCorrect(false);
       setShowCongratulations(false);
+      setAnswer('');
     }
     setShowResult(true);
     setAnsweredQuestion(true);
@@ -108,53 +109,52 @@ export default function QuizFase2() {
   return (
     <>
         <div className='containerquiz'>
+
             <div className='cabecalhoteste'>
-            <h1>Teste seu conhecimento:</h1>
+              <h1>Teste seu conhecimento:</h1>
             </div>
+
             <h2>Mediante os conteúdos abordados, responda:</h2>
             <p>{currentQuestion.pergunta}</p>
 
             <form className='formularioquiz' onSubmit={handleSubmit}>
-            <label>
-                <input
-                type="radio"
-                value="alternativa1"
-                checked={answer === 'alternativa1'}
-                onChange={handleAnswerChange}
-                />
-                {currentQuestion.alternativa1}
-            </label>
-            <label>
-                <input
-                type="radio"
-                value="alternativa2"
-                checked={answer === 'alternativa2'}
-                onChange={handleAnswerChange}
-                />
-                {currentQuestion.alternativa2}
-            </label>
-            <label>
-                <input
-                type="radio"
-                value="alternativa3"
-                checked={answer === 'alternativa3'}
-                onChange={handleAnswerChange}
-                />
-                {currentQuestion.alternativa3}
-            </label>
-            <label>
-                <input
-                type="radio"
-                value="alternativa4"
-                checked={answer === 'alternativa4'}
-                onChange={handleAnswerChange}
-                />
-                {currentQuestion.alternativa4}
-            </label>
-            <br />
+              <label>
+                  <input
+                  type="radio"
+                  value="alternativa1"
+                  checked={answer === 'alternativa1'}
+                  onChange={handleAnswerChange}/>
+                  {currentQuestion.alternativa1}
+              </label>
+              <label>
+                  <input
+                  type="radio"
+                  value="alternativa2"
+                  checked={answer === 'alternativa2'}
+                  onChange={handleAnswerChange}/>
+                  {currentQuestion.alternativa2}
+              </label>
+              <label>
+                  <input
+                  type="radio"
+                  value="alternativa3"
+                  checked={answer === 'alternativa3'}
+                  onChange={handleAnswerChange}/>
+                  {currentQuestion.alternativa3}
+              </label>
+              <label>
+                  <input
+                  type="radio"
+                  value="alternativa4"
+                  checked={answer === 'alternativa4'}
+                  onChange={handleAnswerChange}/>
+                  {currentQuestion.alternativa4}
+              </label>
+              <br />
 
-            <button type="submit">Verificar resposta</button>
+              <button type="submit">Verificar resposta</button>
             </form>
+
             {showResult && isCorrect && (<p className="quiz-result correct">Parabéns, sua resposta está correta!</p>)}
             {showResult && !isCorrect && (<p className="quiz-result incorrect">Resposta incorreta, Tente novamente.</p>)}
 
@@ -162,7 +162,6 @@ export default function QuizFase2() {
               <FaTrophy className="icon-trophy"/>
               <p>Você concluiu essa fase com sucesso!</p>
               <FaTrophy className="icon-trophy"/></div>)}
-
         </div>
 
         <div className="containerbotoes">

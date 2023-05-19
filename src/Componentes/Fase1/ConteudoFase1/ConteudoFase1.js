@@ -5,7 +5,7 @@ export default function ConteudoFase1(){
     return(
         <>
             <div className="container1-fase1">
-                <div className="texto1">
+                <div className="texto1-fase1">
                     <h1>O QUE É UM IPO?</h1>
                     <p>IPO é uma sigla utilizada para se referir ao termo em inglês: Initial Public Offering, que em português significa “Oferta
                         Pública Inicial. De forma clara IPO é o momento em que, pela primeira vez, uma
@@ -16,14 +16,14 @@ export default function ConteudoFase1(){
                         para realizar aquisições de concorrentes das suas áreas de atuação no mercado - os conhecidos M&A's (Mergers and Acquisitions).
                     </p> 
                 </div>
-                    <div className="texto1img">
+                    <div className="texto1img-fase1">
                         <img id="personapensando" src="./img/img_persona_gipo/persona_ponderando.png" alt="imagem persona ponderando"></img>
                     </div>
             </div>
 
 
             <div className="container2-fase1">
-                <div className="texto2">
+                <div className="texto2-fase1">
                     <h1>JORNADA DA COMPANHIA DURANTE O IPO</h1>
                     <p>O processo de IPO consiste em etapas complexas, rígidas e regulamentadas pela Comissão de Valores Mobiliários
                         (CVM).
@@ -32,7 +32,7 @@ export default function ConteudoFase1(){
                         Falaremos mais sobre isso nas próximas fases.
                     </p>
                 </div>
-            <div className="texto2img">
+            <div className="texto2img-fase1">
                         <img id="imganalise" src="./img/img_persona_gipo/analise.png" alt="imagem analise"></img>
             </div>
             </div>

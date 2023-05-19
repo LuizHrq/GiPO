@@ -15,7 +15,7 @@ export default function Fase1(){
             <ConteudoFase1/>
 
             <div class="video-container">
-                <iframe  src="https://www.youtube.com/embed/_Df1ycT2SVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe  src="https://www.youtube.com/embed/_Df1ycT2SVQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <QuizFase1/>
