@@ -18,6 +18,7 @@ import Criarconta from './Componentes/Criarconta/CriarcontaTela';
 
 
 import { Helmet } from 'react-helmet';
+import Fase3 from './Componentes/Fase3/Fase3';
 
 
 export default function App() {
@@ -42,11 +43,14 @@ export default function App() {
 
           {/* COMPONENTES INTEGRADOS */}
           <Route path='/' element={<Inicial/>}/>
-          <Route path='/criarconta' element={<Criarconta/>}/> {/*insert*/}
+          <Route path='/criarconta' element={<Criarconta/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/user' element={<Inicialuser/>}/>
           <Route path='/fase1/*' element={<Fase1/>}/>
           <Route path='/fase2/*' element={<Fase2/>}/>
+          <Route path='/fase3/*' element={<Fase3/>}/>
+          {/* <Route path='/fase4/*' element={<Fase4/>}/>
+          <Route path='/fase5/*' element={<Fase5/>}/> */}
           <Route path='/quemsomos' element={<Quemsomos/>}/>
 
         </Routes>

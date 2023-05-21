@@ -24,10 +24,12 @@ export default function ConteudoFase2(){
 
             <div className="container2-fase2">
                 <div className="texto2-fase2">
-                    <h1>EXIGÊNCIA DA AUDITORIA</h1>
-                    <p>Ainda sobre o processo de auditoria, a legislação exige que, para abrir o capital, a empresa precisa apresentar 3 anos de balanços auditados.
+                    <h1>IMPORTÂNCIA DA AUDITORIA</h1>
+                    <p>Acerca do processo de auditoria, a legislação exige que a empresa apresente 3 anos de balanços auditados.
                         Se a companhia já tinha por hábito auditar seus resultados, essa etapa fica mais fácil. Caso contrário, pode ser
-                        necessário aguardar o período inteiro de 3 anos se completar para os números certos em mãos e assim, poder abrir o capital.
+                        necessário aguardar o período inteiro de 3 anos se completar para que, com os números corretos em mãos, possa abrir o capital.
+                        Considerando isso feito, próximo passo é <strong className="strong">solicitar o pedido de registro de IPO na Comissão de Valores Mobiliários (CVM)</strong> e o 
+                        <strong className="strong"> registro na listagem de ações na B3</strong>, neste momento a CVM e a B3 verificarão se a empresa está apta para abrir o seu capital.
                     </p>
                 </div>
             </div>

@@ -22,19 +22,19 @@ export default function Fases(){
                 </div>
 
                 <div className="fase3">
-                    <Link to={"/fase2"}>
+                    <Link to={"/fase3"}>
                         <h2>Fase 3:<br></br>Etapas do IPO <br></br>Parte 2</h2>
                     </Link>
                 </div>
 
                 <div className="fase4">
-                    <Link to={"/fase2"}>  
+                    <Link to={"/fase4"}>  
                         <h2>Fase 4:<br></br>Estudo de caso</h2>
                     </Link>
                 </div>
 
                 <div className="fase5">
-                    <Link to={"/fase2"}>  
+                    <Link to={"/fase5"}>  
                         <h2>Fase 5:<br></br>Refresh</h2>
                     </Link>
                 </div>
