@@ -38,11 +38,11 @@ export default function QuizFase3() {
     },
     {
       pergunta: '4) O que é um PROSPECTO?',
-      alternativa1: 'A ) Um documento que contém informações sobre a empresa e a oferta.',
-      alternativa2: 'B ) Um documento que não contém informações sobre a empresa e a oferta.',
+      alternativa1: 'A ) Um documento que não contém informações sobre a empresa e a oferta.',
+      alternativa2: 'B ) Um documento que contém informações sobre a empresa e a oferta.',
       alternativa3: 'C ) Um planejamento da área financeira da empresa.',
       alternativa4: 'D ) Nenhuma das alternativas estão corretas.',
-      resposta: 'alternativa1'
+      resposta: 'alternativa2'
     },
     {
       pergunta: '5) Quais os dois eixos de um PROSPECTO?',
